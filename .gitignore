@@ -1,0 +1,28 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Editor / IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+*~
+
+# Node
+node_modules/
+
+# Build / cache
+dist/
+.cache/
+
+# Environment
+.env
+.env.*
+!.env.example
