@@ -29,9 +29,9 @@
               <li><a class="site-header__nav-link" href="experience.html">EXPERIENCE</a></li>
             </ul>
           </nav>
-          <a class="button button--primary site-header__reservation" href="reservation.html">RESERVATION&nbsp; ↗</a>
+          <a class="button button--primary site-header__reservation" href="reservation.html"><span>RESERVATION</span><span class="site-header__reservation-arrow" aria-hidden="true">↗</span></a>
           <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="メニューを開く" data-menu-button>
-            <span class="menu-toggle__icon" aria-hidden="true"><span></span><span></span><span></span></span>
+            <span class="menu-toggle__icon" aria-hidden="true"><span></span><span></span></span>
           </button>
         </div>
       </div>
@@ -54,11 +54,17 @@
             <li><a class="menu-overlay__main-link" href="reservation.html">RESERVATION</a></li>
           </ul>
         </nav>
-        <ul class="menu-overlay__utility" aria-label="補助メニュー">
-          <li><a href="experience.html#access">ACCESS</a></li>
-          <li><a href="stay.html#faq">FAQ</a></li>
-          <li><span>INSTAGRAM</span></li>
-        </ul>
+        <div class="menu-overlay__footer">
+          <ul class="menu-overlay__utility" aria-label="補助メニュー">
+            <li><a href="experience.html#access">ACCESS</a></li>
+            <li><a href="stay.html#faq">FAQ</a></li>
+            <li><span>INSTAGRAM</span></li>
+          </ul>
+          <div class="menu-overlay__brand-note">
+            <strong>TSUGI</strong>
+            <span>A small onsen inn in between mountain and river.</span>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -75,21 +81,21 @@
       </section>
     </main>
 
-    <footer class="site-footer">
+    <footer class="site-footer" id="site-footer">
       <div class="container">
         <div class="site-footer__grid">
           <div class="site-footer__brand">
             <a class="site-footer__logo" href="index.html" aria-label="TSUGI ホーム">
               <img src="assets/logos/tsugi_wordmark_white.png" alt="" width="1448" height="1086">
             </a>
-            <p class="site-footer__description">A small onsen hotel between mountain and river.</p>
+            <p class="site-footer__description"><span class="site-footer__description-brand">TSUGI<br></span>A small onsen inn between mountain and river.<br>8 rooms / Since 1968, edited for 2026.</p>
           </div>
           <nav class="site-footer__main" aria-label="フッターナビゲーション">
             <ul class="site-footer__main-list">
-              <li><a href="index.html" aria-current="page">HOME</a></li>
               <li><a href="stay.html">STAY</a></li>
               <li><a href="story.html">STORY</a></li>
               <li><a href="experience.html">EXPERIENCE</a></li>
+              <li><a href="reservation.html">RESERVATION</a></li>
             </ul>
           </nav>
           <nav class="site-footer__utility" aria-label="補助ナビゲーション">
@@ -101,7 +107,7 @@
           </nav>
         </div>
         <div class="site-footer__bottom">
-          <small>© TSUGI</small>
+          <small>© 2026 TSUGI</small>
           <span class="site-footer__location">MOUNTAIN / RIVER / ONSEN</span>
         </div>
       </div>

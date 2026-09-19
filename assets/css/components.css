@@ -23,13 +23,17 @@
     position: relative;
     z-index: 100;
     height: var(--header-height);
-    border-bottom: 1px solid transparent;
+    border-bottom: 1px solid var(--color-line);
     background: var(--color-bone);
   }
 
   .site-header__inner {
     display: flex;
+    width: auto;
     height: 100%;
+    margin-inline: 0;
+    padding-right: 20px;
+    padding-left: 14px;
     align-items: center;
     justify-content: space-between;
   }
@@ -56,8 +60,9 @@
 
   .site-header__actions {
     display: flex;
+    height: 100%;
     align-items: center;
-    gap: 10px;
+    gap: 3px;
   }
 
   .site-header__nav {
@@ -71,24 +76,45 @@
     justify-content: center;
     border: 1px solid transparent;
     border-radius: 0;
-    font-size: 11px;
     font-weight: 700;
-    letter-spacing: 0.08em;
-    line-height: 1;
-    text-transform: uppercase;
+    line-height: 1.2;
   }
 
   .button--primary {
-    padding-inline: 14px;
+    width: 240px;
+    min-height: 60px;
+    padding-inline: 28px;
     color: var(--color-bone);
     background: var(--color-navy);
+    font-size: 14px;
+    letter-spacing: 1px;
   }
 
   .button--secondary {
+    width: 160px;
+    min-height: 44px;
     padding-inline: 20px;
     border-color: var(--color-ink);
     color: var(--color-ink);
     background: transparent;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+  }
+
+  .site-header__reservation {
+    width: 112px;
+    min-width: 112px;
+    min-height: 44px;
+    padding: 0;
+    border-color: transparent;
+    color: var(--color-ink);
+    background: transparent;
+    font-size: 11px;
+    letter-spacing: 0.6px;
+  }
+
+  .site-header__reservation-arrow {
+    display: none;
   }
 
   .button:hover,
@@ -107,27 +133,45 @@
     background: var(--color-bone);
   }
 
-  .menu-toggle,
-  .menu-overlay__close {
+  .site-header__reservation:hover,
+  .site-header__reservation:focus-visible {
+    color: var(--color-rust);
+    border-color: transparent;
+    background: transparent;
+  }
+
+  .menu-toggle {
     display: inline-flex;
     width: 44px;
     height: 44px;
     cursor: pointer;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
   }
 
   .menu-toggle__icon {
-    display: grid;
-    width: 22px;
-    gap: 5px;
+    position: relative;
+    display: block;
+    width: 28px;
+    height: 40px;
   }
 
   .menu-toggle__icon span {
+    position: absolute;
+    right: 0;
     display: block;
-    width: 100%;
+    width: 28px;
     height: 1px;
     background: var(--color-ink);
+  }
+
+  .menu-toggle__icon span:first-child {
+    top: 12px;
+  }
+
+  .menu-toggle__icon span:nth-child(2) {
+    top: 22px;
+    width: 20px;
   }
 
   .menu-overlay {
@@ -141,13 +185,18 @@
 
   .menu-overlay__inner {
     display: flex;
+    width: 100%;
+    max-width: none;
     min-height: 100%;
+    margin: 0;
+    padding: 16px 20px 24px;
     flex-direction: column;
-    padding-block: 16px 36px;
+    justify-content: space-between;
   }
 
   .menu-overlay__top {
     display: flex;
+    height: 56px;
     align-items: center;
     justify-content: space-between;
   }
@@ -159,12 +208,18 @@
 
   .menu-overlay__close {
     position: relative;
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
   }
 
   .menu-overlay__close::before,
   .menu-overlay__close::after {
     position: absolute;
-    width: 24px;
+    width: 28.284px;
     height: 1px;
     background: currentColor;
     content: "";
@@ -179,97 +234,176 @@
   }
 
   .menu-overlay__navigation {
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    justify-content: center;
-    padding-block: 48px;
+    width: 100%;
   }
 
   .menu-overlay__main-list {
     display: grid;
-    gap: 10px;
+    gap: 8px;
   }
 
   .menu-overlay__main-link {
-    display: inline-block;
-    font-size: clamp(32px, 10vw, 52px);
+    position: relative;
+    display: flex;
+    min-height: 48px;
+    align-items: center;
+    color: var(--color-bone);
+    font-size: 32px;
     font-weight: 600;
-    letter-spacing: 0.02em;
-    line-height: 1.35;
+    letter-spacing: 0.6px;
+    line-height: 1;
   }
 
-  .menu-overlay__main-link[aria-current="page"],
+  .menu-overlay__main-link[aria-current="page"] {
+    padding-left: 32px;
+  }
+
+  .menu-overlay__main-link[aria-current="page"]::before {
+    position: absolute;
+    left: 0;
+    color: var(--color-rust);
+    content: "—";
+    font-size: 14px;
+    font-weight: 700;
+  }
+
   .menu-overlay__main-link:hover,
   .menu-overlay__main-link:focus-visible {
     color: var(--color-rust);
   }
 
+  .menu-overlay__main-list li:last-child {
+    margin-top: 32px;
+  }
+
+  .menu-overlay__main-list li:last-child .menu-overlay__main-link {
+    width: 100%;
+    max-width: 335px;
+    min-height: 56px;
+    padding: 0 20px;
+    color: var(--color-navy);
+    background: var(--color-bone);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    justify-content: space-between;
+  }
+
+  .menu-overlay__main-list li:last-child .menu-overlay__main-link::after {
+    content: "↗";
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .menu-overlay__footer {
+    display: grid;
+    gap: 24px;
+  }
+
   .menu-overlay__utility {
     display: flex;
     flex-wrap: wrap;
-    gap: 16px 28px;
-    padding-top: 28px;
-    border-top: 1px solid var(--color-footer-line);
-    color: var(--color-muted);
+    gap: 24px;
+    color: var(--color-bone);
     font-size: 11px;
     font-weight: 600;
-    letter-spacing: 0.12em;
+    letter-spacing: 1px;
+  }
+
+  .menu-overlay__brand-note {
+    display: grid;
+    gap: 6px;
+  }
+
+  .menu-overlay__brand-note strong {
+    font-size: 12px;
+    letter-spacing: 1.4px;
+  }
+
+  .menu-overlay__brand-note span {
+    color: var(--color-muted);
+    font-size: 10px;
+    letter-spacing: 0.2px;
   }
 
   .section-label {
     color: var(--color-rust);
+    font-family: var(--font-gothic);
     font-size: 11px;
     font-weight: 700;
-    letter-spacing: 0.16em;
+    letter-spacing: 1.8px;
     text-transform: uppercase;
   }
 
   .site-footer {
-    padding-block: 64px 30px;
+    position: relative;
+    height: 720px;
+    padding: 0;
     color: var(--color-bone);
     background: var(--color-navy);
   }
 
-  .site-footer__grid {
-    display: grid;
-    gap: 46px;
+  .site-footer > .container {
+    position: relative;
+    width: 100%;
+    max-width: none;
+    height: 100%;
+    margin: 0;
   }
 
+  .site-footer__grid,
   .site-footer__brand {
-    display: grid;
-    gap: 28px;
+    display: contents;
   }
 
   .site-footer__logo {
+    position: absolute;
+    top: 68px;
+    left: 0;
     display: block;
-    width: 142px;
-    height: 72px;
+    width: 141px;
+    height: 106px;
   }
 
   .site-footer__description {
-    max-width: 310px;
+    position: absolute;
+    top: 492px;
+    left: 20px;
+    width: 300px;
     color: var(--color-muted);
     font-size: 12px;
+    font-weight: 500;
     line-height: 1.75;
+  }
+
+  .site-footer__main {
+    position: absolute;
+    top: 168px;
+    left: 20px;
+    width: 335px;
   }
 
   .site-footer__main-list {
     display: grid;
-    gap: 10px;
-    font-size: 22px;
+    font-size: 24px;
     font-weight: 600;
-    line-height: 1.45;
+    letter-spacing: 0.2px;
+    line-height: 1.9;
+  }
+
+  .site-footer__utility {
+    position: absolute;
+    top: 394px;
+    left: 20px;
   }
 
   .site-footer__utility-list {
     display: flex;
-    flex-wrap: wrap;
-    gap: 14px 24px;
+    gap: 24px;
     color: var(--color-muted);
     font-size: 11px;
     font-weight: 600;
-    letter-spacing: 0.1em;
+    letter-spacing: 1px;
   }
 
   .site-footer__utility-text {
@@ -277,14 +411,20 @@
   }
 
   .site-footer__bottom {
+    position: absolute;
+    top: 452px;
+    right: 20px;
+    left: 20px;
     display: flex;
-    margin-top: 52px;
-    padding-top: 24px;
+    height: 244px;
+    margin: 0;
+    padding-top: 198px;
     border-top: 1px solid var(--color-footer-line);
     color: var(--color-muted);
     font-size: 10px;
+    font-weight: 500;
     justify-content: space-between;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.4px;
   }
 
   .site-footer__location {
@@ -292,24 +432,157 @@
   }
 
   @media (min-width: 768px) {
+    .site-header__inner {
+      width: min(calc(100% - (var(--page-gutter) * 2)), var(--container-max));
+      margin-inline: auto;
+      padding: 0;
+    }
+
+    .site-header__logo {
+      width: 64px;
+      height: 64px;
+    }
+
+    .site-header__actions {
+      gap: 8px;
+    }
+
+    .site-header__reservation {
+      width: 168px;
+      min-width: 168px;
+      min-height: 52px;
+      padding-inline: 22px;
+      border-color: var(--color-navy);
+      color: var(--color-bone);
+      background: var(--color-navy);
+      font-size: 12px;
+      letter-spacing: 0.8px;
+      justify-content: flex-start;
+      gap: 8px;
+    }
+
+    .site-header__reservation-arrow {
+      display: inline;
+    }
+
+    .site-header__reservation:hover,
+    .site-header__reservation:focus-visible {
+      color: var(--color-navy);
+      border-color: var(--color-navy);
+      background: var(--color-bone);
+    }
+
+    .menu-overlay__inner {
+      padding: 20px 40px 32px;
+    }
+
+    .menu-overlay__top {
+      height: 64px;
+    }
+
+    .menu-overlay__logo {
+      width: 64px;
+      height: 64px;
+    }
+
+    .menu-overlay__main-list {
+      gap: 12px;
+    }
+
+    .menu-overlay__main-list li:last-child {
+      margin-top: 28px;
+    }
+
+    .menu-overlay__main-link {
+      font-size: 36px;
+    }
+
+    .menu-overlay__main-list li:last-child .menu-overlay__main-link {
+      width: 360px;
+      max-width: none;
+      min-height: 60px;
+    }
+
+    .site-footer {
+      height: 520px;
+    }
+
+    .site-footer__logo {
+      top: 56px;
+      left: 32px;
+      width: 190px;
+      height: 128px;
+    }
+
+    .site-footer__description {
+      top: 228px;
+      left: 32px;
+      width: 260px;
+      font-size: 13px;
+    }
+
+    .site-footer__description-brand {
+      display: none;
+    }
+
+    .site-footer__main {
+      top: 72px;
+      left: 320px;
+      width: 200px;
+    }
+
+    .site-footer__main-list {
+      font-size: 20px;
+      letter-spacing: 0;
+    }
+
+    .site-footer__utility {
+      top: 78px;
+      left: 570px;
+      width: 150px;
+    }
+
+    .site-footer__utility-list {
+      display: grid;
+      gap: 0;
+      font-size: 12px;
+      letter-spacing: 1.2px;
+      line-height: 2.2;
+    }
+
+    .site-footer__bottom {
+      top: 424px;
+      right: 32px;
+      left: 32px;
+      height: auto;
+      padding-top: 28px;
+      letter-spacing: 0.5px;
+    }
+
+    .site-footer__location {
+      display: block;
+      width: 286px;
+      text-align: right;
+    }
+  }
+
+  @media (min-width: 1024px) {
     .site-header__logo {
       width: 72px;
       height: 72px;
     }
 
-    .site-header__actions {
-      gap: 16px;
-    }
-
-    .button--primary {
+    .site-header__reservation {
+      width: 176px;
       min-width: 176px;
-      min-height: 52px;
-      padding-inline: 22px;
-      font-size: 12px;
     }
 
     .menu-overlay__inner {
-      padding-block: 12px 48px;
+      padding-top: 16px;
+    }
+
+    .menu-overlay__top {
+      height: 72px;
     }
 
     .menu-overlay__logo {
@@ -317,24 +590,41 @@
       height: 72px;
     }
 
-    .menu-overlay__main-list {
-      gap: 4px;
-    }
-
     .menu-overlay__main-link {
-      font-size: clamp(48px, 7vw, 68px);
+      font-size: 40px;
     }
 
-    .site-footer {
-      padding-block: 80px 36px;
+    .menu-overlay__main-list li:last-child .menu-overlay__main-link {
+      width: 376px;
     }
 
-    .site-footer__grid {
-      grid-template-columns: minmax(0, 1.3fr) minmax(180px, 0.7fr);
+    .site-footer__logo {
+      left: 40px;
+      width: 220px;
+    }
+
+    .site-footer__description {
+      left: 40px;
+      width: 320px;
+    }
+
+    .site-footer__main {
+      left: 420px;
+      width: 260px;
+    }
+
+    .site-footer__main-list {
+      font-size: 24px;
     }
 
     .site-footer__utility {
-      grid-column: 2;
+      left: 760px;
+      width: 180px;
+    }
+
+    .site-footer__bottom {
+      right: 40px;
+      left: 40px;
     }
   }
 
@@ -345,23 +635,28 @@
     }
 
     .site-header__actions {
-      gap: 48px;
+      gap: 0;
     }
 
     .site-header__nav {
-      display: block;
+      position: absolute;
+      top: 0;
+      left: calc(100% - 720px);
+      display: flex;
+      height: 100%;
+      align-items: center;
     }
 
     .site-header__nav-list {
       display: flex;
       align-items: center;
-      gap: 34px;
+      gap: 40px;
     }
 
     .site-header__nav-link {
       font-size: 13px;
       font-weight: 700;
-      letter-spacing: 0.08em;
+      letter-spacing: 0.9px;
     }
 
     .site-header__nav-link[aria-current="page"] {
@@ -372,40 +667,68 @@
       display: none;
     }
 
-    .site-footer {
-      padding-block: 56px 30px;
+    .button--secondary {
+      width: 184px;
+      min-height: 48px;
+      padding-inline: 22px;
+      letter-spacing: 0.6px;
     }
 
-    .site-footer__grid {
-      grid-template-columns: 1.35fr 0.75fr 0.65fr;
-      gap: 80px;
+    .section-label {
+      font-size: 12px;
+      letter-spacing: 2px;
     }
 
     .site-footer__logo {
+      left: 56px;
       width: 240px;
-      height: 128px;
     }
 
-    .site-footer__main-list {
-      font-size: 24px;
+    .site-footer__description {
+      left: 56px;
+      width: 360px;
+    }
+
+    .site-footer__main {
+      left: 570px;
     }
 
     .site-footer__utility {
-      grid-column: auto;
-    }
-
-    .site-footer__utility-list {
-      display: grid;
-      gap: 12px;
+      left: 980px;
+      width: 260px;
     }
 
     .site-footer__bottom {
-      margin-top: 66px;
-      padding-top: 28px;
+      right: 56px;
+      left: 56px;
+    }
+  }
+
+  @media (min-width: 1440px) {
+    .site-header__nav {
+      left: 720px;
     }
 
-    .site-footer__location {
-      display: block;
+    .site-header__nav-list {
+      gap: 44px;
+    }
+
+    .site-footer__logo,
+    .site-footer__description {
+      left: 64px;
+    }
+
+    .site-footer__main {
+      left: 600px;
+    }
+
+    .site-footer__utility {
+      left: 1030px;
+    }
+
+    .site-footer__bottom {
+      right: 64px;
+      left: 64px;
     }
   }
 }
