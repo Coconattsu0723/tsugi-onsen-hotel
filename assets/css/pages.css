@@ -3363,4 +3363,388 @@
       display: none;
     }
   }
+
+  @media (min-width: 1024px) {
+    .page-stay .section-label {
+      top: 120px;
+      left: 40px;
+    }
+
+    .page-stay .stay-hero {
+      height: 830px;
+    }
+
+    .page-stay .stay-hero > .section-label {
+      top: 120px;
+    }
+
+    .page-stay .stay-hero__title {
+      top: 182px;
+      left: 40px;
+      width: 309.3902px;
+      font-size: 52px;
+      line-height: 1.16;
+    }
+
+    .page-stay .stay-hero__intro {
+      top: 456px;
+      left: 42.878px;
+      width: 309.3902px;
+    }
+
+    .page-stay .stay-hero__figure {
+      top: 100px;
+      right: 40px;
+      left: 368.0976px;
+      height: 608px;
+    }
+
+    .page-stay .stay-hero__figure img {
+      height: 570px;
+    }
+
+    .page-stay .stay-hero__figure figcaption {
+      top: 592px;
+      left: 0;
+    }
+
+    .page-stay .stay-rooms {
+      height: 2630px;
+      background: linear-gradient(to bottom, var(--color-surface) 0 1980px, var(--color-bone) 1980px 100%);
+    }
+
+    .page-stay .stay-rooms__title {
+      top: 176px;
+      left: 40px;
+      width: 359.7561px;
+    }
+
+    .page-stay .stay-rooms__intro {
+      top: 178px;
+      left: 523.5122px;
+      width: 374.1463px;
+    }
+
+    .page-stay .room-card {
+      left: 40px;
+      width: calc(100% - 80px);
+      height: 432px;
+    }
+
+    .page-stay .room-card--garden {
+      top: 470px;
+    }
+
+    .page-stay .room-card--river {
+      top: 942px;
+    }
+
+    .page-stay .room-card--corner {
+      top: 1414px;
+    }
+
+    .page-stay .room-card__image {
+      top: 51px;
+      left: 15px;
+      width: 440px;
+      height: 330px;
+    }
+
+    .page-stay .room-card__name {
+      top: 23px;
+      left: 487px;
+    }
+
+    .page-stay .room-card__title {
+      top: 71px;
+      left: 487px;
+      width: 416px;
+    }
+
+    .page-stay .room-card__description {
+      top: 111px;
+      left: 487px;
+      width: 416px;
+    }
+
+    .page-stay .room-card__specs {
+      top: 247px;
+      left: 487px;
+      width: 408px;
+      grid-template-columns: repeat(2, 192px);
+      column-gap: 24px;
+    }
+
+    .page-stay .room-card__specs > div {
+      width: 192px;
+    }
+
+    .page-stay .stay-rooms__detail-text {
+      top: 2130px;
+      left: 512px;
+      width: 287.8049px;
+    }
+
+    .page-stay .stay-rooms__detail-image {
+      top: 2100px;
+      left: 40px;
+      width: 374.1463px;
+      height: 390px;
+    }
+
+    .page-stay .stay-rooms__detail-copy {
+      top: 2300px;
+      left: 512px;
+      width: 309.3902px;
+    }
+
+    .page-stay .stay-bath {
+      height: 1240px;
+    }
+
+    .page-stay .stay-bath > .section-label {
+      top: 140px;
+      left: 40px;
+    }
+
+    .page-stay .stay-bath__title {
+      top: 198px;
+      left: 40px;
+      width: 287.8049px;
+    }
+
+    .page-stay .stay-bath__copy {
+      top: 397px;
+      left: 40px;
+      width: 287.8049px;
+    }
+
+    .page-stay .stay-bath__copy br:nth-of-type(2),
+    .page-stay .stay-bath__copy br:nth-of-type(4) {
+      display: initial;
+    }
+
+    .page-stay .stay-bath__image--main {
+      top: 120px;
+      right: auto;
+      left: 368.0976px;
+      width: 615.9024px;
+      height: 570px;
+    }
+
+    .page-stay .stay-bath__image--detail {
+      top: 680px;
+      left: 40px;
+      width: 259.0244px;
+      height: 400px;
+    }
+
+    .page-stay .stay-bath__detail-caption {
+      top: 1098px;
+      left: 40px;
+    }
+
+    .page-stay .stay-bath__information {
+      top: 806px;
+      left: 368.0976px;
+      width: 431.7073px;
+    }
+
+    .page-stay .stay-bath__information dt {
+      top: 34px;
+    }
+
+    .page-stay .stay-bath__information dd {
+      top: 26px;
+      left: 115.122px;
+      width: 316.5854px;
+    }
+
+    .page-stay .stay-dining {
+      height: 1150px;
+    }
+
+    .page-stay .stay-dining__title {
+      top: 176px;
+      left: 40px;
+      width: 400px;
+    }
+
+    .page-stay .stay-dining__intro {
+      top: 178px;
+      left: 523.5122px;
+      width: 381.3415px;
+    }
+
+    .page-stay .dining-block {
+      right: auto;
+      width: 460.4878px;
+      height: 640px;
+      border: 0;
+    }
+
+    .page-stay .dining-block--dinner {
+      top: 390px;
+      left: 40px;
+    }
+
+    .page-stay .dining-block--breakfast {
+      top: 390px;
+      left: 523.5122px;
+    }
+
+    .page-stay .dining-block__image {
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 427px;
+    }
+
+    .page-stay .dining-block__meta {
+      top: 478px;
+      left: 17.2683px;
+      width: 425.9512px;
+    }
+
+    .page-stay .dining-block__meta::before {
+      top: -23px;
+    }
+
+    .page-stay .dining-block__meta p {
+      width: 122.3171px;
+    }
+
+    .page-stay .dining-block__copy {
+      top: 526px;
+      left: 17.2683px;
+      width: 402.9268px;
+    }
+
+    .page-stay .stay-lounge {
+      height: 1030px;
+    }
+
+    .page-stay .stay-lounge > .section-label {
+      top: 126px;
+      left: 681.8049px;
+      width: 320px;
+    }
+
+    .page-stay .stay-lounge__title {
+      top: 178px;
+      left: 681.8049px;
+      width: 280.6098px;
+    }
+
+    .page-stay .stay-lounge__image--main {
+      top: 120px;
+      right: auto;
+      left: 40px;
+      width: 561.2195px;
+      height: 520px;
+    }
+
+    .page-stay .stay-lounge__copy {
+      top: 364px;
+      left: 681.8049px;
+      width: 280.6098px;
+    }
+
+    .page-stay .stay-lounge__image--detail {
+      top: 574px;
+      right: auto;
+      left: 681.8049px;
+      width: 215.8537px;
+      height: 300px;
+    }
+
+    .page-stay .stay-lounge__detail-caption {
+      top: 894px;
+      left: 681.8049px;
+    }
+
+    .page-stay .stay-information {
+      height: 750px;
+    }
+
+    .page-stay .stay-information__title,
+    .page-stay .stay-faq__title {
+      top: 176px;
+      left: 40px;
+    }
+
+    .page-stay .stay-information__list {
+      top: 308px;
+      left: 40px;
+      width: 944px;
+      height: 289px;
+    }
+
+    .page-stay .stay-information__list > div {
+      width: 431.7073px;
+      height: 49px;
+    }
+
+    .page-stay .stay-information__list > div:nth-child(1),
+    .page-stay .stay-information__list > div:nth-child(4) {
+      top: 0;
+      height: 49px;
+    }
+
+    .page-stay .stay-information__list > div:nth-child(2),
+    .page-stay .stay-information__list > div:nth-child(5) {
+      top: 120px;
+      height: 49px;
+    }
+
+    .page-stay .stay-information__list > div:nth-child(3),
+    .page-stay .stay-information__list > div:nth-child(6) {
+      top: 240px;
+      height: 49px;
+    }
+
+    .page-stay .stay-information__list > div:nth-child(n + 4) {
+      left: 483.5122px;
+    }
+
+    .page-stay .stay-information__list dt {
+      top: 2px;
+    }
+
+    .page-stay .stay-information__list dd {
+      left: 158.2927px;
+      width: 273.4146px;
+    }
+
+    .page-stay .stay-information__list > div:nth-child(2) dt,
+    .page-stay .stay-information__list > div:nth-child(5) dt {
+      top: 2px;
+    }
+
+    .page-stay .stay-faq {
+      height: 940px;
+    }
+
+    .page-stay .stay-faq__list {
+      top: 312px;
+      right: 40px;
+      left: 40px;
+    }
+
+    .page-stay .stay-reservation > .section-label {
+      top: 120px;
+      left: 40px;
+    }
+
+    .page-stay .stay-reservation__title {
+      top: 168px;
+      left: 40px;
+      width: 720px;
+    }
+
+    .page-stay .stay-reservation__button {
+      top: 264px;
+      left: 40px;
+    }
+  }
 }
