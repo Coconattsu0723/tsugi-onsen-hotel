@@ -1,0 +1,142 @@
+@layer reset, tokens, base;
+
+@layer reset {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  html {
+    min-width: 320px;
+  }
+
+  body,
+  h1,
+  h2,
+  h3,
+  p,
+  figure,
+  blockquote,
+  dl,
+  dd {
+    margin: 0;
+  }
+
+  ul,
+  ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  img,
+  picture {
+    display: block;
+    max-width: 100%;
+  }
+
+  button,
+  input,
+  textarea,
+  select {
+    font: inherit;
+  }
+
+  button {
+    padding: 0;
+    border: 0;
+    color: inherit;
+    background: none;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+@layer tokens {
+  :root {
+    --color-bone: #f1efe8;
+    --color-surface: #e9e6dd;
+    --color-ink: #1d1e20;
+    --color-navy: #172129;
+    --color-stone: #6f6a63;
+    --color-muted: #a9a49b;
+    --color-line: #c5bfb4;
+    --color-rust: #a45a3a;
+    --color-footer-line: #4c5860;
+    --font-gothic: "Noto Sans JP", sans-serif;
+    --font-mincho: "Noto Serif JP", serif;
+    --page-gutter: 20px;
+    --container-max: 1312px;
+    --section-space: 80px;
+    --header-height: 72px;
+    --focus-ring: 2px solid var(--color-rust);
+    --transition-fast: 160ms ease;
+  }
+
+  @media (min-width: 768px) {
+    :root {
+      --page-gutter: 32px;
+      --section-space: 96px;
+      --header-height: 96px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    :root {
+      --page-gutter: 40px;
+      --section-space: 112px;
+    }
+  }
+
+  @media (min-width: 1366px) {
+    :root {
+      --page-gutter: 56px;
+      --section-space: 140px;
+    }
+  }
+
+  @media (min-width: 1440px) {
+    :root {
+      --page-gutter: 64px;
+    }
+  }
+}
+
+@layer base {
+  html {
+    scroll-behavior: auto;
+  }
+
+  body {
+    min-height: 100vh;
+    overflow-x: clip;
+    color: var(--color-ink);
+    background: var(--color-bone);
+    font-family: var(--font-gothic);
+    font-size: 16px;
+    line-height: 1.75;
+  }
+
+  body.is-menu-open {
+    overflow: hidden;
+  }
+
+  h1,
+  h2,
+  h3 {
+    line-height: 1.3;
+  }
+
+  :focus-visible {
+    outline: var(--focus-ring);
+    outline-offset: 4px;
+  }
+
+  [hidden] {
+    display: none !important;
+  }
+}

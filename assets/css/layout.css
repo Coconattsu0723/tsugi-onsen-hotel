@@ -1,0 +1,47 @@
+@layer layout;
+
+@layer layout {
+  .site-shell {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  .site-main {
+    flex: 1;
+  }
+
+  .container {
+    width: min(calc(100% - (var(--page-gutter) * 2)), var(--container-max));
+    margin-inline: auto;
+  }
+
+  .section {
+    padding-block: var(--section-space);
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  @media (min-width: 768px) {
+    .grid {
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+      gap: 16px;
+    }
+  }
+
+  @media (min-width: 1366px) {
+    .grid {
+      gap: 22px;
+    }
+  }
+
+  @media (min-width: 1440px) {
+    .grid {
+      gap: 24px;
+    }
+  }
+}

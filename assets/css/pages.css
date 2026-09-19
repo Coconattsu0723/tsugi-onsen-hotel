@@ -1,0 +1,52 @@
+@layer pages;
+
+@layer pages {
+  /* Temporary page shell. Replace this block when page-specific sections are implemented. */
+  .page-placeholder {
+    display: grid;
+    min-height: clamp(420px, 58vh, 680px);
+    align-items: center;
+    background: var(--color-bone);
+  }
+
+  .page-placeholder__content {
+    grid-column: 1 / -1;
+  }
+
+  .page-placeholder__title {
+    max-width: 760px;
+    margin-top: 24px;
+    font-size: clamp(38px, 10vw, 64px);
+    font-weight: 600;
+    letter-spacing: -0.035em;
+    line-height: 1.25;
+  }
+
+  .page-placeholder__note {
+    max-width: 520px;
+    margin-top: 32px;
+    color: var(--color-stone);
+    font-size: 13px;
+    letter-spacing: 0.04em;
+  }
+
+  @media (min-width: 768px) {
+    .page-placeholder__content {
+      grid-column: 2 / span 9;
+    }
+
+    .page-placeholder__title {
+      font-size: clamp(52px, 7vw, 76px);
+    }
+  }
+
+  @media (min-width: 1366px) {
+    .page-placeholder__content {
+      grid-column: 2 / span 8;
+    }
+
+    .page-placeholder__title {
+      font-size: 88px;
+    }
+  }
+}
