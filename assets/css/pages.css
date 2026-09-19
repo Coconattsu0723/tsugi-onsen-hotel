@@ -1,52 +1,497 @@
 @layer pages;
 
 @layer pages {
-  /* Temporary page shell. Replace this block when page-specific sections are implemented. */
-  .page-placeholder {
-    display: grid;
-    min-height: clamp(420px, 58vh, 680px);
-    align-items: center;
+  .page-home .site-main {
     background: var(--color-bone);
   }
 
-  .page-placeholder__content {
-    grid-column: 1 / -1;
+  .page-home .section-label {
+    line-height: 1.45;
   }
 
-  .page-placeholder__title {
-    max-width: 760px;
-    margin-top: 24px;
-    font-size: clamp(38px, 10vw, 64px);
+  .page-home .home-hero,
+  .page-home .home-introduction,
+  .page-home .home-stay,
+  .page-home .home-edit,
+  .page-home .home-lounge,
+  .page-home .home-story,
+  .page-home .home-experience,
+  .page-home .home-location,
+  .page-home .home-final {
+    position: relative;
+    width: 100%;
+  }
+
+  .page-home .home-hero {
+    height: 680px;
+    background: var(--color-bone);
+  }
+
+  .page-home .home-hero__image {
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .page-home .home-hero__content {
+    position: static;
+  }
+
+  .page-home .home-hero__title {
+    position: absolute;
+    top: 402px;
+    right: 0;
+    left: 20px;
+    font-size: 40px;
+    font-weight: 800;
+    letter-spacing: -0.8px;
+    line-height: 1.08;
+  }
+
+  .page-home .home-hero__copy {
+    position: absolute;
+    top: 526px;
+    left: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.7;
+  }
+
+  .page-home .home-hero__date {
+    position: absolute;
+    top: 616px;
+    left: 20px;
+    color: var(--color-rust);
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 1.45;
+  }
+
+  .page-home .home-introduction {
+    height: 470px;
+    background: var(--color-surface);
+  }
+
+  .page-home .home-introduction > .section-label {
+    position: absolute;
+    top: 88px;
+    left: 20px;
+  }
+
+  .page-home .home-introduction__title {
+    position: absolute;
+    top: 136px;
+    left: 20px;
+    font-size: 36px;
     font-weight: 600;
-    letter-spacing: -0.035em;
+    letter-spacing: -0.4px;
     line-height: 1.25;
   }
 
-  .page-placeholder__note {
-    max-width: 520px;
-    margin-top: 32px;
+  .page-home .home-introduction__copy {
+    position: absolute;
+    top: 210px;
+    left: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.8;
+  }
+
+  .page-home .home-introduction__rule {
+    position: absolute;
+    top: 402px;
+    left: 20px;
+    width: 72px;
+    height: 1px;
+    background: var(--color-rust);
+  }
+
+  .page-home .home-stay {
+    height: 1040px;
+    background: var(--color-bone);
+  }
+
+  .page-home .home-stay > .section-label,
+  .page-home .home-stay__title,
+  .page-home .home-stay__image,
+  .page-home .home-stay__meta,
+  .page-home .home-stay__link,
+  .page-home .home-lounge > .section-label,
+  .page-home .home-lounge__title,
+  .page-home .home-lounge__image,
+  .page-home .home-lounge__copy,
+  .page-home .home-story > .section-label,
+  .page-home .home-story__title,
+  .page-home .home-story__graphic,
+  .page-home .home-story__image,
+  .page-home .home-story__link,
+  .page-home .home-experience > .section-label,
+  .page-home .home-experience__title,
+  .page-home .home-experience__image,
+  .page-home .home-experience__copy,
+  .page-home .home-experience__link,
+  .page-home .home-location__text,
+  .page-home .home-location__image,
+  .page-home .home-location__meta,
+  .page-home .home-location__link {
+    position: absolute;
+  }
+
+  .page-home .home-stay > .section-label {
+    top: 88px;
+    left: 20px;
+  }
+
+  .page-home .home-stay__title {
+    top: 130px;
+    left: 20px;
+    font-size: 38px;
+    font-weight: 800;
+    line-height: 1.12;
+  }
+
+  .page-home .home-stay__image,
+  .page-home .home-lounge__image,
+  .page-home .home-story__image,
+  .page-home .home-experience__image,
+  .page-home .home-location__image {
+    overflow: hidden;
+  }
+
+  .page-home .home-stay__image img,
+  .page-home .home-lounge__image img,
+  .page-home .home-story__image img,
+  .page-home .home-experience__image img,
+  .page-home .home-location__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .page-home .home-stay__image--room {
+    top: 244px;
+    right: 20px;
+    left: 20px;
+    height: 248px;
+  }
+
+  .page-home .home-stay__image--bath {
+    top: 524px;
+    right: 20px;
+    width: 240px;
+    height: 164px;
+  }
+
+  .page-home .home-stay__image--dining {
+    top: 720px;
+    left: 20px;
+    width: 210px;
+    height: 140px;
+  }
+
+  .page-home .home-stay__meta {
+    top: 892px;
+    left: 20px;
     color: var(--color-stone);
     font-size: 13px;
-    letter-spacing: 0.04em;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    line-height: 1.45;
   }
 
-  @media (min-width: 768px) {
-    .page-placeholder__content {
-      grid-column: 2 / span 9;
-    }
-
-    .page-placeholder__title {
-      font-size: clamp(52px, 7vw, 76px);
-    }
+  .page-home .home-section-link {
+    white-space: nowrap;
   }
 
-  @media (min-width: 1366px) {
-    .page-placeholder__content {
-      grid-column: 2 / span 8;
+  .page-home .home-stay__link {
+    top: 960px;
+    right: 20px;
+  }
+
+  .page-home .home-edit {
+    height: 520px;
+    color: var(--color-bone);
+    background: var(--color-navy);
+  }
+
+  .page-home .home-edit__label {
+    position: absolute;
+    top: 60px;
+    left: 20px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.6px;
+    line-height: 1.45;
+  }
+
+  .page-home .home-edit__graphic {
+    position: absolute;
+    top: 112px;
+    left: 14px;
+    font-size: 88px;
+    font-weight: 800;
+    letter-spacing: -2px;
+    line-height: 1;
+    white-space: nowrap;
+  }
+
+  .page-home .home-edit__title {
+    position: absolute;
+    top: 294px;
+    left: 20px;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 1.3;
+  }
+
+  .page-home .home-edit__note {
+    position: absolute;
+    top: 442px;
+    left: 20px;
+    color: var(--color-muted);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    line-height: 1.45;
+  }
+
+  .page-home .home-lounge {
+    height: 930px;
+    background: var(--color-surface);
+  }
+
+  .page-home .home-lounge > .section-label {
+    top: 84px;
+    left: 20px;
+  }
+
+  .page-home .home-lounge__title {
+    top: 130px;
+    left: 20px;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.18;
+  }
+
+  .page-home .home-lounge__image--main {
+    top: 286px;
+    left: 0;
+    width: 100%;
+    height: 270px;
+  }
+
+  .page-home .home-lounge__image--detail {
+    top: 590px;
+    right: 20px;
+    width: 220px;
+    height: 192px;
+  }
+
+  .page-home .home-lounge__copy {
+    top: 820px;
+    left: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.75;
+  }
+
+  .page-home .home-story {
+    height: 1000px;
+    background: var(--color-bone);
+  }
+
+  .page-home .home-story > .section-label {
+    top: 88px;
+    left: 20px;
+  }
+
+  .page-home .home-story__title {
+    top: 134px;
+    left: 20px;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.22;
+  }
+
+  .page-home .home-story__graphic {
+    top: 306px;
+    left: 20px;
+    font-size: 48px;
+    font-weight: 800;
+    letter-spacing: 0.4px;
+    line-height: 1.02;
+  }
+
+  .page-home .home-story__image--beam {
+    top: 478px;
+    right: 20px;
+    width: 280px;
+    height: 210px;
+  }
+
+  .page-home .home-story__image--courtyard {
+    top: 720px;
+    left: 20px;
+    width: 220px;
+    height: 165px;
+  }
+
+  .page-home .home-story__link {
+    top: 920px;
+    right: 20px;
+  }
+
+  .page-home .home-experience {
+    height: 800px;
+    background: var(--color-surface);
+  }
+
+  .page-home .home-experience > .section-label {
+    top: 88px;
+    left: 20px;
+  }
+
+  .page-home .home-experience__title {
+    top: 134px;
+    left: 20px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.18;
+  }
+
+  .page-home .home-experience__image--walk {
+    top: 264px;
+    left: 20px;
+    width: 280px;
+    height: 210px;
+  }
+
+  .page-home .home-experience__image--river {
+    top: 510px;
+    right: 20px;
+    width: 165px;
+    height: 118px;
+  }
+
+  .page-home .home-experience__copy {
+    top: 664px;
+    left: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.75;
+  }
+
+  .page-home .home-experience__link {
+    top: 736px;
+    right: 20px;
+    width: 180px;
+  }
+
+  .page-home .home-location {
+    height: 650px;
+    background: var(--color-bone);
+  }
+
+  .page-home .home-location__text {
+    top: 80px;
+    right: 20px;
+    left: 20px;
+  }
+
+  .page-home .home-location__title {
+    margin-top: 28px;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.3;
+  }
+
+  .page-home .home-location__image {
+    top: 260px;
+    right: 20px;
+    left: 20px;
+    height: 224px;
+  }
+
+  .page-home .home-location__meta {
+    top: 516px;
+    left: 20px;
+    color: var(--color-stone);
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.45;
+  }
+
+  .page-home .home-location__link {
+    top: 574px;
+    right: 20px;
+    width: 140px;
+  }
+
+  .page-home .home-final {
+    height: 720px;
+    background: var(--color-surface);
+  }
+
+  .page-home .home-final__image {
+    width: 100%;
+    height: 300px;
+    border-bottom: 1px solid var(--color-line);
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .page-home .home-final__content {
+    position: static;
+  }
+
+  .page-home .home-final__content > .section-label {
+    position: absolute;
+    top: 366px;
+    left: 20px;
+  }
+
+  .page-home .home-final__title {
+    position: absolute;
+    top: 410px;
+    left: 20px;
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: -0.4px;
+    line-height: 1.18;
+  }
+
+  .page-home .home-final__button {
+    position: absolute;
+    top: 548px;
+    right: 20px;
+    left: 20px;
+    width: auto;
+    min-height: 72px;
+  }
+
+  .page-home .home-final__note {
+    position: absolute;
+    top: 654px;
+    left: 20px;
+    color: var(--color-stone);
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 1.45;
+  }
+
+  @media (max-width: 359px) {
+    .page-home .home-hero__title {
+      font-size: 36px;
     }
 
-    .page-placeholder__title {
-      font-size: 88px;
+    .page-home .home-edit__graphic {
+      font-size: 78px;
+    }
+
+    .page-home .home-location__meta {
+      font-size: 12px;
     }
   }
 }
