@@ -60,13 +60,158 @@
     </div>
 
     <main class="site-main" id="main-content" tabindex="-1">
-      <!-- Temporary foundation preview. Replace when STAY sections are implemented. -->
-      <section class="page-placeholder section" aria-labelledby="page-title">
-        <div class="container grid"><div class="page-placeholder__content">
-          <p class="section-label">STAY</p>
-          <h1 class="page-placeholder__title" id="page-title">泊まるために必要なものを、<br>少しだけ。</h1>
-          <p class="page-placeholder__note">Page sections will be implemented in the next phase.</p>
-        </div></div>
+      <section class="stay-hero" aria-labelledby="stay-title">
+        <p class="section-label">01 — STAY</p>
+        <h1 class="stay-hero__title" id="stay-title">泊まるために必要なものを、<br>少しだけ。</h1>
+        <p class="stay-hero__intro">客室は8室。<br>温泉に入り、食べ、休む。<br>その間にある時間まで、<br>ゆっくり過ごせるように整えました。</p>
+        <a class="stay-text-link stay-hero__link" href="#rooms">VIEW ROOMS&nbsp; →</a>
+        <figure class="stay-hero__figure">
+          <img src="assets/images/rooms/06_room_garden.png" alt="中庭に面したツインルーム" width="1536" height="1088">
+        </figure>
+      </section>
+
+      <section class="stay-rooms" id="rooms" aria-labelledby="rooms-title">
+        <p class="section-label">ROOMS</p>
+        <h2 class="stay-rooms__title" id="rooms-title">同じ建物の中に、<br>違う時間があります。</h2>
+        <p class="stay-rooms__intro">8室を、3つのタイプに分けています。<br>広さの序列ではなく、<br>窓の向きや光、景色の違いからお選びください。</p>
+
+        <article class="room-card room-card--garden">
+          <img class="room-card__image" src="assets/images/rooms/06_room_garden.png" alt="庭を望むGARDENタイプの客室" width="1536" height="1088">
+          <p class="room-card__name">GARDEN</p>
+          <h3 class="room-card__title">庭を見る部屋。</h3>
+          <p class="room-card__description">中庭に面した、<br>TSUGIの基本となる客室。<br>障子越しに入る光と、<br>季節ごとに変わる庭の景色を楽しめます。</p>
+          <dl class="room-card__specs">
+            <div><dt>CAPACITY</dt><dd>2 guests</dd></div>
+            <div><dt>SIZE</dt><dd>32㎡</dd></div>
+            <div><dt>BED</dt><dd>Twin</dd></div>
+            <div><dt>VIEW</dt><dd>Courtyard</dd></div>
+          </dl>
+        </article>
+
+        <article class="room-card room-card--river">
+          <img class="room-card__image" src="assets/images/rooms/07_room_river.png" alt="川と山を望むRIVERタイプの客室" width="1536" height="1088">
+          <p class="room-card__name">RIVER</p>
+          <h3 class="room-card__title">川の音を聞く部屋。</h3>
+          <p class="room-card__description">建物の川側にある客室。<br>窓辺に座ると、<br>木々の向こうから川の音が聞こえます。</p>
+          <dl class="room-card__specs">
+            <div><dt>CAPACITY</dt><dd>2 guests</dd></div>
+            <div><dt>SIZE</dt><dd>36㎡</dd></div>
+            <div><dt>BED</dt><dd>Twin</dd></div>
+            <div><dt>VIEW</dt><dd>River / Mountain</dd></div>
+          </dl>
+        </article>
+
+        <article class="room-card room-card--corner">
+          <img class="room-card__image" src="assets/images/rooms/08_room_corner.png" alt="二方向から光が入るCORNERタイプの客室" width="1536" height="1088">
+          <p class="room-card__name">CORNER</p>
+          <h3 class="room-card__title">光が二方向から入る部屋。</h3>
+          <p class="room-card__description">建物の角に位置する、<br>少し広めの客室。<br>朝と夕方で変わる光を感じながら、<br>ゆっくり過ごせる空間です。</p>
+          <dl class="room-card__specs">
+            <div><dt>CAPACITY</dt><dd>2–3 guests</dd></div>
+            <div><dt>SIZE</dt><dd>42㎡</dd></div>
+            <div><dt>BED</dt><dd>Twin + Extra bed</dd></div>
+            <div><dt>VIEW</dt><dd>River / Town</dd></div>
+          </dl>
+        </article>
+
+        <div class="stay-rooms__detail">
+          <div class="stay-rooms__detail-text">
+            <p class="stay-rooms__detail-label">DETAIL / 09</p>
+            <h3 class="stay-rooms__detail-title">古い時間に、<br>触れる。</h3>
+          </div>
+          <img class="stay-rooms__detail-image" src="assets/images/rooms/09_room_detail.png" alt="古い木組みを残した客室の細部" width="1120" height="1400">
+          <p class="stay-rooms__detail-copy">古い木組みと新しい納まり。<br>光が触れる細部を残しています。</p>
+        </div>
+      </section>
+
+      <section class="stay-bath" aria-labelledby="bath-title">
+        <p class="section-label">BATH</p>
+        <h2 class="stay-bath__title" id="bath-title">古い石を残した、<br>小さな湯。</h2>
+        <img class="stay-bath__image stay-bath__image--main" src="assets/images/bath/10_bath_main.png" alt="古い石を残して整え直したTSUGIの浴場" width="1536" height="1024">
+        <img class="stay-bath__image stay-bath__image--detail" src="assets/images/bath/11_bath_detail.png" alt="" width="1120" height="1400">
+        <p class="stay-bath__copy">以前の浴場に使われていた石を一部残し、<br>今の使い方に合わせて整え直しました。<br>内湯と、小さな外湯。<br>夜と朝で変わる光の中で、<br>静かに湯に入るための場所です。</p>
+        <dl class="stay-bath__information">
+          <dt>OPEN</dt>
+          <dd>06:00–10:00 / 15:00–24:00<br><span>FOR GUESTS ONLY</span></dd>
+        </dl>
+      </section>
+
+      <section class="stay-dining" aria-labelledby="dining-title">
+        <p class="section-label">DINING</p>
+        <h2 class="stay-dining__title" id="dining-title">土地のものを、<br>その季節に。</h2>
+        <p class="stay-dining__intro">華やかな料理を並べるのではなく、<br>この場所で食べたいものを、一皿ずつ。<br>地元の野菜、川魚、米、発酵食品。</p>
+
+        <article class="dining-block dining-block--dinner">
+          <img class="dining-block__image" src="assets/images/dining/12_dinner.png" alt="地元の食材を使ったTSUGIの夕食" width="1536" height="1024">
+          <div class="dining-block__meta"><h3>DINNER</h3><p>18:00 / 19:00</p></div>
+          <p class="dining-block__copy">一日の終わりに、<br>温かいものをゆっくり食べる夕食。</p>
+        </article>
+
+        <article class="dining-block dining-block--breakfast">
+          <img class="dining-block__image" src="assets/images/dining/13_breakfast.png" alt="ご飯と味噌汁を中心にしたTSUGIの朝食" width="1536" height="1024">
+          <div class="dining-block__meta"><h3>BREAKFAST</h3><p>07:30 / 08:30</p></div>
+          <p class="dining-block__copy">ご飯、味噌汁、野菜、卵。<br>朝に必要なものを、<br>丁寧に整えます。</p>
+        </article>
+      </section>
+
+      <section class="stay-lounge" aria-labelledby="lounge-title">
+        <p class="section-label">LOUNGE</p>
+        <h2 class="stay-lounge__title" id="lounge-title">客室ではない場所にも、<br>居場所を。</h2>
+        <img class="stay-lounge__image stay-lounge__image--main" src="assets/images/lounge/04_lounge_main.png" alt="川に面した大きなテーブルのあるラウンジ" width="1536" height="1024">
+        <img class="stay-lounge__image stay-lounge__image--detail" src="assets/images/lounge/05_lounge_detail.png" alt="" width="1120" height="1400">
+        <p class="stay-lounge__copy">12室から8室へ減らしたとき、<br>空いた場所の一部をラウンジにしました。<br>本と、お茶と、大きなテーブル。<br>何かをするためではなく、<br>何もしないためにも使える場所です。</p>
+        <a class="stay-text-link stay-lounge__link" href="#stay-information">STAY INFORMATION&nbsp; →</a>
+      </section>
+
+      <section class="stay-information" id="stay-information" aria-labelledby="information-title">
+        <p class="section-label">STAY INFORMATION</p>
+        <h2 class="stay-information__title" id="information-title">ご滞在について。</h2>
+        <dl class="stay-information__list">
+          <div><dt>CHECK-IN</dt><dd>15:00–18:00</dd></div>
+          <div><dt>CHECK-OUT</dt><dd>11:00</dd></div>
+          <div><dt>ROOMS</dt><dd>8</dd></div>
+          <div><dt>PARKING</dt><dd>Available</dd></div>
+          <div><dt>WI-FI</dt><dd>Available throughout the property</dd></div>
+          <div><dt>SMOKING</dt><dd>All rooms non-smoking</dd></div>
+        </dl>
+      </section>
+
+      <section class="stay-faq" id="faq" aria-labelledby="faq-title">
+        <p class="section-label">FAQ</p>
+        <h2 class="stay-faq__title" id="faq-title">よくあるご質問。</h2>
+        <div class="stay-faq__list">
+          <article class="faq-item">
+            <h3><button type="button" aria-expanded="false" aria-controls="faq-answer-1">子どもと宿泊できますか？<span aria-hidden="true"></span></button></h3>
+            <div class="faq-item__answer" id="faq-answer-1" hidden><p>はい。小学生以上のお子さまからご宿泊いただけます。館内は静かに過ごすことを前提とした空間のため、未就学児のご宿泊は受け付けていません。</p></div>
+          </article>
+          <article class="faq-item">
+            <h3><button type="button" aria-expanded="false" aria-controls="faq-answer-2">駐車場はありますか？<span aria-hidden="true"></span></button></h3>
+            <div class="faq-item__answer" id="faq-answer-2" hidden><p>はい。宿泊者専用の無料駐車場をご用意しています。1室につき1台を基本とし、2台以上でお越しの場合は事前にご相談ください。</p></div>
+          </article>
+          <article class="faq-item">
+            <h3><button type="button" aria-expanded="false" aria-controls="faq-answer-3">食事なしの宿泊はできますか？<span aria-hidden="true"></span></button></h3>
+            <div class="faq-item__answer" id="faq-answer-3" hidden><p>はい。素泊まりプランもご利用いただけます。周辺には飲食店が多くないため、夕食を外で予定される場合は事前に営業時間などをご確認ください。</p></div>
+          </article>
+          <article class="faq-item">
+            <h3><button type="button" aria-expanded="false" aria-controls="faq-answer-4">アレルギー対応はできますか？<span aria-hidden="true"></span></button></h3>
+            <div class="faq-item__answer" id="faq-answer-4" hidden><p>できる限り対応します。ご予約時にアレルギーの内容をお知らせください。ただし、調理環境を完全に分けることはできないため、重篤なアレルギーについては対応できない場合があります。</p></div>
+          </article>
+          <article class="faq-item">
+            <h3><button type="button" aria-expanded="false" aria-controls="faq-answer-5">日帰り入浴はできますか？<span aria-hidden="true"></span></button></h3>
+            <div class="faq-item__answer" id="faq-answer-5" hidden><p>現在、浴場は宿泊者専用です。日帰り入浴は受け付けていません。周辺には徒歩圏内に共同浴場があります。</p></div>
+          </article>
+          <article class="faq-item">
+            <h3><button type="button" aria-expanded="false" aria-controls="faq-answer-6">館内はバリアフリーですか？<span aria-hidden="true"></span></button></h3>
+            <div class="faq-item__answer" id="faq-answer-6" hidden><p>建物の一部に段差や階段があります。完全なバリアフリー対応ではありません。移動に不安がある場合は、ご予約前にご相談ください。</p></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="stay-reservation" aria-labelledby="reservation-title">
+        <p class="section-label">RESERVATION</p>
+        <h2 class="stay-reservation__title" id="reservation-title">次の滞在を、<br>ここから。</h2>
+        <a class="button button--primary stay-reservation__button" href="reservation.html">RESERVATION&nbsp; ↗</a>
+        <a class="stay-reservation__related" href="story.html"><span>NEXT</span><strong>STORY&nbsp; →</strong></a>
       </section>
     </main>
 
