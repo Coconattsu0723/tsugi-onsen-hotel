@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>STAY | TSUGI</title>
+    <script>document.documentElement.classList.add("js");</script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&amp;family=Noto+Serif+JP:wght@400;500;600&amp;display=swap" rel="stylesheet">
@@ -184,28 +185,28 @@
         <h2 class="stay-faq__title" id="faq-title">よくあるご質問。</h2>
         <div class="stay-faq__list">
           <article class="faq-item">
-            <h3><button type="button" aria-expanded="false" aria-controls="faq-answer-1">子どもと宿泊できますか？<span aria-hidden="true"></span></button></h3>
-            <div class="faq-item__answer" id="faq-answer-1" hidden><p>はい。小学生以上のお子さまからご宿泊いただけます。館内は静かに過ごすことを前提とした空間のため、未就学児のご宿泊は受け付けていません。</p></div>
+            <h3 class="faq-item__heading"><button class="faq-item__button" id="faq-question-1" type="button" aria-expanded="false" aria-controls="faq-answer-1"><span class="faq-item__question">子どもと宿泊できますか？</span><span class="faq-item__icon" aria-hidden="true"></span></button></h3>
+            <div class="faq-item__answer" id="faq-answer-1" role="region" aria-labelledby="faq-question-1"><p>はい。小学生以上のお子さまからご宿泊いただけます。<br>館内は静かに過ごすことを前提とした空間のため、<br>未就学児のご宿泊は受け付けていません。</p></div>
           </article>
           <article class="faq-item">
-            <h3><button type="button" aria-expanded="false" aria-controls="faq-answer-2">駐車場はありますか？<span aria-hidden="true"></span></button></h3>
-            <div class="faq-item__answer" id="faq-answer-2" hidden><p>はい。宿泊者専用の無料駐車場をご用意しています。1室につき1台を基本とし、2台以上でお越しの場合は事前にご相談ください。</p></div>
+            <h3 class="faq-item__heading"><button class="faq-item__button" id="faq-question-2" type="button" aria-expanded="false" aria-controls="faq-answer-2"><span class="faq-item__question">駐車場はありますか？</span><span class="faq-item__icon" aria-hidden="true"></span></button></h3>
+            <div class="faq-item__answer" id="faq-answer-2" role="region" aria-labelledby="faq-question-2"><p>はい。宿泊者専用の無料駐車場をご用意しています。<br>1室につき1台を基本とし、<br>2台以上でお越しの場合は事前にご相談ください。</p></div>
           </article>
           <article class="faq-item">
-            <h3><button type="button" aria-expanded="false" aria-controls="faq-answer-3">食事なしの宿泊はできますか？<span aria-hidden="true"></span></button></h3>
-            <div class="faq-item__answer" id="faq-answer-3" hidden><p>はい。素泊まりプランもご利用いただけます。周辺には飲食店が多くないため、夕食を外で予定される場合は事前に営業時間などをご確認ください。</p></div>
+            <h3 class="faq-item__heading"><button class="faq-item__button" id="faq-question-3" type="button" aria-expanded="false" aria-controls="faq-answer-3"><span class="faq-item__question">食事なしの宿泊はできますか？</span><span class="faq-item__icon" aria-hidden="true"></span></button></h3>
+            <div class="faq-item__answer" id="faq-answer-3" role="region" aria-labelledby="faq-question-3"><p>はい。素泊まりプランもご利用いただけます。<br>周辺には飲食店が多くないため、<br>夕食を外で予定される場合は事前に営業時間などをご確認ください。</p></div>
           </article>
           <article class="faq-item">
-            <h3><button type="button" aria-expanded="false" aria-controls="faq-answer-4">アレルギー対応はできますか？<span aria-hidden="true"></span></button></h3>
-            <div class="faq-item__answer" id="faq-answer-4" hidden><p>できる限り対応します。ご予約時にアレルギーの内容をお知らせください。ただし、調理環境を完全に分けることはできないため、重篤なアレルギーについては対応できない場合があります。</p></div>
+            <h3 class="faq-item__heading"><button class="faq-item__button" id="faq-question-4" type="button" aria-expanded="false" aria-controls="faq-answer-4"><span class="faq-item__question">アレルギー対応はできますか？</span><span class="faq-item__icon" aria-hidden="true"></span></button></h3>
+            <div class="faq-item__answer" id="faq-answer-4" role="region" aria-labelledby="faq-question-4"><p>できる限り対応します。<br>ご予約時にアレルギーの内容をお知らせください。<br>ただし、調理環境を完全に分けることはできないため、<br>重篤なアレルギーについては対応できない場合があります。</p></div>
           </article>
           <article class="faq-item">
-            <h3><button type="button" aria-expanded="false" aria-controls="faq-answer-5">日帰り入浴はできますか？<span aria-hidden="true"></span></button></h3>
-            <div class="faq-item__answer" id="faq-answer-5" hidden><p>現在、浴場は宿泊者専用です。日帰り入浴は受け付けていません。周辺には徒歩圏内に共同浴場があります。</p></div>
+            <h3 class="faq-item__heading"><button class="faq-item__button" id="faq-question-5" type="button" aria-expanded="false" aria-controls="faq-answer-5"><span class="faq-item__question">日帰り入浴はできますか？</span><span class="faq-item__icon" aria-hidden="true"></span></button></h3>
+            <div class="faq-item__answer" id="faq-answer-5" role="region" aria-labelledby="faq-question-5"><p>現在、浴場は宿泊者専用です。<br>日帰り入浴は受け付けていません。<br>周辺には徒歩圏内に共同浴場があります。</p></div>
           </article>
           <article class="faq-item">
-            <h3><button type="button" aria-expanded="false" aria-controls="faq-answer-6">館内はバリアフリーですか？<span aria-hidden="true"></span></button></h3>
-            <div class="faq-item__answer" id="faq-answer-6" hidden><p>建物の一部に段差や階段があります。完全なバリアフリー対応ではありません。移動に不安がある場合は、ご予約前にご相談ください。</p></div>
+            <h3 class="faq-item__heading"><button class="faq-item__button" id="faq-question-6" type="button" aria-expanded="false" aria-controls="faq-answer-6"><span class="faq-item__question">館内はバリアフリーですか？</span><span class="faq-item__icon" aria-hidden="true"></span></button></h3>
+            <div class="faq-item__answer" id="faq-answer-6" role="region" aria-labelledby="faq-question-6"><p>建物の一部に段差や階段があります。<br>完全なバリアフリー対応ではありません。<br>移動に不安がある場合は、<br>ご予約前にご相談ください。</p></div>
           </article>
         </div>
       </section>

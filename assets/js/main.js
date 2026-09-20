@@ -91,3 +91,28 @@
 
   desktopQuery.addEventListener("change", resetMenuAtDesktop);
 })();
+
+(() => {
+  const faq = document.querySelector("#faq");
+
+  if (!faq) return;
+
+  const buttons = [...faq.querySelectorAll(".faq-item__button")];
+
+  buttons.forEach((button) => {
+    const answerId = button.getAttribute("aria-controls");
+    const answer = answerId ? document.getElementById(answerId) : null;
+
+    if (!answer) return;
+
+    button.setAttribute("aria-expanded", "false");
+    answer.hidden = true;
+
+    button.addEventListener("click", () => {
+      const isExpanded = button.getAttribute("aria-expanded") === "true";
+
+      button.setAttribute("aria-expanded", String(!isExpanded));
+      answer.hidden = isExpanded;
+    });
+  });
+})();
