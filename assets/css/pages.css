@@ -11,6 +11,7 @@
 
   .page-home .home-tablet-only,
   .page-home .home-wide-only,
+  .page-home .home-desktop-only,
   .page-home figcaption {
     display: none;
   }
@@ -1138,7 +1139,11 @@
 
     .page-home .home-through-tablet,
     .page-home .home-stay__title .home-title__tablet,
-    .page-home .home-lounge__title .home-title__tablet {
+    .page-home .home-lounge__title .home-title__tablet,
+    .page-home .home-story__title .home-title__tablet,
+    .page-home .home-location__title .home-title__tablet,
+    .page-home .home-story__title .home-title__sp,
+    .page-home .home-location__title .home-title__sp {
       display: none;
     }
 
@@ -1554,6 +1559,14 @@
   }
 
   @media (min-width: 1366px) {
+    .page-home .home-hero__title .home-wide-only {
+      display: none;
+    }
+
+    .page-home .home-desktop-only {
+      display: inline;
+    }
+
     .page-home .home-hero {
       height: 680px;
     }
@@ -3789,6 +3802,7 @@
     }
 
     .page-story .story-keep .story-choice__graphic {
+      grid-column: 1 / -1;
       margin: 120px 0 0;
       font-size: 120px;
       letter-spacing: -4px;
@@ -4578,6 +4592,9 @@
 
     .page-story .story-change .story-choice__graphic {
       margin-left: 836px;
+      font-size: 110px;
+      letter-spacing: -4px;
+      line-height: 1;
     }
 
     .page-story .story-change > .section-label,
@@ -4605,6 +4622,12 @@
 
     .page-story .story-remove {
       padding-inline: 64px;
+    }
+
+    .page-story .story-remove .story-choice__graphic {
+      font-size: 140px;
+      letter-spacing: -5px;
+      line-height: 1;
     }
 
     .page-story .story-remove > .section-label {
@@ -5482,6 +5505,7 @@
     }
 
     .page-experience .timeline-scene-note {
+      display: none;
       width: 302.1951px;
     }
 
@@ -5570,6 +5594,7 @@
     .page-experience .map-legend {
       width: 892px;
       grid-template-columns: repeat(2, 420px);
+      grid-auto-flow: row;
     }
 
     .page-experience .experience-closing {
@@ -5656,6 +5681,7 @@
     }
 
     .page-experience .timeline-scene-note {
+      display: block;
       width: 401.4329px;
     }
 
