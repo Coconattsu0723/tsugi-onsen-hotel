@@ -79,10 +79,12 @@
         <figure class="story-keep__image story-keep__image--main">
           <img src="assets/images/story/14_pillar_beam.png" alt="残された木の柱と梁" width="1122" height="1402">
         </figure>
-        <figure class="story-keep__image story-keep__image--detail">
-          <img src="assets/images/story/15_wooden_frames_courtyard.png" alt="中庭に面した木製の建具" width="1122" height="1402">
-        </figure>
-        <p class="story-choice__caption story-tablet-only">WOODEN FRAMES / COURTYARD</p>
+        <div class="story-choice__detail-row">
+          <figure class="story-keep__image story-keep__image--detail">
+            <img src="assets/images/story/15_wooden_frames_courtyard.png" alt="中庭に面した木製の建具" width="1122" height="1402">
+          </figure>
+          <p class="story-choice__caption story-tablet-only">WOODEN FRAMES / COURTYARD</p>
+        </div>
       </section>
 
       <section class="story-change" aria-labelledby="story-change-title">
@@ -93,18 +95,24 @@
         <figure class="story-change__image story-change__image--main">
           <img src="assets/images/rooms/09_room_detail.png" alt="新しく整えた客室の家具と照明" width="1122" height="1402">
         </figure>
-        <figure class="story-change__image story-change__image--detail">
-          <img src="assets/images/bath/11_bath_detail.png" alt="新しく整えた浴場の水回り" width="1122" height="1402">
-        </figure>
-        <p class="story-choice__caption story-tablet-only">BATH / STONE / NEW LIGHT</p>
+        <div class="story-choice__detail-row">
+          <figure class="story-change__image story-change__image--detail">
+            <img src="assets/images/bath/11_bath_detail.png" alt="新しく整えた浴場の水回り" width="1122" height="1402">
+          </figure>
+          <p class="story-choice__caption story-tablet-only">BATH / STONE / NEW LIGHT</p>
+        </div>
       </section>
 
       <section class="story-remove" aria-labelledby="story-remove-title">
         <p class="story-choice__graphic story-tablet-only" aria-hidden="true">REMOVE</p>
         <p class="section-label">03 — REMOVE</p>
-        <h2 class="story-remove__title" id="story-remove-title">4つの客室。<br>いくつかの間仕切り。<br>使われなくなった設備。</h2>
-        <p class="story-choice__copy">減らすことで、<br>建物の中に新しい余白をつくりました。</p>
-        <span class="story-remove__rule" aria-hidden="true"></span>
+        <div class="story-remove__columns">
+          <h2 class="story-remove__title" id="story-remove-title">4つの客室。<br>いくつかの間仕切り。<br>使われなくなった設備。</h2>
+          <div class="story-remove__note">
+            <p class="story-choice__copy">減らすことで、<br>建物の中に新しい余白をつくりました。</p>
+            <span class="story-remove__rule" aria-hidden="true"></span>
+          </div>
+        </div>
       </section>
 
       <section class="story-reduction" aria-labelledby="story-reduction-title">
@@ -117,25 +125,27 @@
       <section class="story-materials" aria-labelledby="story-materials-title">
         <p class="section-label">MATERIALS</p>
         <h2 class="story-materials__title" id="story-materials-title">新しい素材の<span class="story-tablet-break"><br></span>中に、<br>古い時間を残す。</h2>
-        <figure class="story-materials__item story-materials__item--wood">
-          <img src="assets/images/story/14_pillar_beam.png" alt="古い木の柱と梁" width="1122" height="1402">
-          <figcaption>WOOD / PILLAR &amp; BEAM</figcaption>
-        </figure>
-        <figure class="story-materials__item story-materials__item--frames">
-          <img src="assets/images/story/15_wooden_frames_courtyard.png" alt="漆喰壁と古い木製建具" width="1122" height="1402">
-          <figcaption>PLASTER / OLD FRAME</figcaption>
-        </figure>
-        <figure class="story-materials__item story-materials__item--stone">
-          <img src="assets/images/bath/11_bath_detail.png" alt="浴場に残した石の質感" width="1122" height="1402">
-          <figcaption>STONE / BATH</figcaption>
-        </figure>
-        <figure class="story-materials__item story-materials__item--fabric">
-          <img src="assets/images/rooms/09_room_detail.png" alt="客室の布地と光" width="1122" height="1402">
-          <figcaption>FABRIC / LIGHT</figcaption>
-        </figure>
-        <figure class="story-materials__item story-materials__item--corridor story-tablet-only">
-          <img src="assets/images/story/16_corridor_stair.png" alt="" width="1122" height="1402">
-        </figure>
+        <div class="story-materials__composition">
+          <figure class="story-materials__item story-materials__item--wood">
+            <img src="assets/images/story/14_pillar_beam.png" alt="古い木の柱と梁" width="1122" height="1402">
+            <figcaption>WOOD / PILLAR &amp; BEAM</figcaption>
+          </figure>
+          <figure class="story-materials__item story-materials__item--frames">
+            <img src="assets/images/story/15_wooden_frames_courtyard.png" alt="漆喰壁と古い木製建具" width="1122" height="1402">
+            <figcaption>PLASTER / OLD FRAME</figcaption>
+          </figure>
+          <figure class="story-materials__item story-materials__item--stone">
+            <img src="assets/images/bath/11_bath_detail.png" alt="浴場に残した石の質感" width="1122" height="1402">
+            <figcaption>STONE / BATH</figcaption>
+          </figure>
+          <figure class="story-materials__item story-materials__item--fabric">
+            <img src="assets/images/rooms/09_room_detail.png" alt="客室の布地と光" width="1122" height="1402">
+            <figcaption>FABRIC / LIGHT</figcaption>
+          </figure>
+          <figure class="story-materials__item story-materials__item--corridor story-tablet-only">
+            <img src="assets/images/story/16_corridor_stair.png" alt="" width="1122" height="1402">
+          </figure>
+        </div>
       </section>
 
       <section class="story-corridor" aria-labelledby="story-corridor-title">
