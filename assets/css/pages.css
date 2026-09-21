@@ -3223,7 +3223,12 @@
     }
 
     .page-story .story-keep {
+      min-height: 1253px;
       background: #f1f0ec;
+    }
+
+    .page-story .story-change {
+      min-height: 1233px;
     }
 
     .page-story .story-choice__graphic,
@@ -3300,6 +3305,7 @@
     .page-story .story-remove {
       display: grid;
       height: auto;
+      min-height: 704px;
       padding: 112px 32px 220px;
       grid-template-columns: 1fr;
     }
@@ -3379,6 +3385,7 @@
     .page-story .story-materials {
       display: block;
       height: auto;
+      min-height: 1753px;
       padding: 96px 32px 96px;
     }
 
@@ -3533,7 +3540,7 @@
       width: auto;
       height: auto;
       min-height: 450px;
-      margin: 128px -77px 0;
+      margin: 97px -77px 0;
       padding: 128px 32px 144px;
       background: var(--color-bone);
       flex-direction: column;
