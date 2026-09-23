@@ -101,6 +101,12 @@
     letter-spacing: 0.5px;
   }
 
+  /* TODO: replace reservation placeholders with links when the final reservation URL is available. */
+  .reservation-placeholder {
+    cursor: default;
+    pointer-events: none;
+  }
+
   .site-header__reservation {
     width: 112px;
     min-width: 112px;
