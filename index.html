@@ -70,7 +70,11 @@
 
     <main class="site-main" id="main-content" tabindex="-1">
       <section class="home-hero" aria-labelledby="home-hero-title">
-        <img class="home-hero__image" src="assets/images/exterior/01_hero_exterior.png" alt="川沿いに建つTSUGIの外観" width="1672" height="941">
+        <picture class="responsive-picture">
+          <source type="image/avif" srcset="assets/images/optimized/exterior/01_hero_exterior-480w.avif 480w, assets/images/optimized/exterior/01_hero_exterior-768w.avif 768w, assets/images/optimized/exterior/01_hero_exterior-1024w.avif 1024w, assets/images/optimized/exterior/01_hero_exterior-1600w.avif 1600w" sizes="(min-width: 1440px) 976px, (min-width: 1366px) 68vw, (min-width: 1024px) 61vw, 100vw">
+          <source type="image/webp" srcset="assets/images/optimized/exterior/01_hero_exterior-480w.webp 480w, assets/images/optimized/exterior/01_hero_exterior-768w.webp 768w, assets/images/optimized/exterior/01_hero_exterior-1024w.webp 1024w, assets/images/optimized/exterior/01_hero_exterior-1600w.webp 1600w" sizes="(min-width: 1440px) 976px, (min-width: 1366px) 68vw, (min-width: 1024px) 61vw, 100vw">
+          <img class="home-hero__image" src="assets/images/exterior/01_hero_exterior.png" alt="川沿いに建つTSUGIの外観" width="1672" height="941" loading="eager" fetchpriority="high">
+        </picture>
         <p class="home-hero__image-caption home-tablet-only">MOUNTAIN / RIVER / TSUGI</p>
         <div class="home-hero__content">
           <p class="home-hero__metadata home-tablet-only">TSUGI / ONSEN HOTEL / SINCE 1968</p>
@@ -112,15 +116,27 @@
         <p class="section-label">01 — STAY</p>
         <h2 class="home-stay__title" id="home-stay-title"><span class="home-title__sp">8 rooms.<br>Less, but more.</span><span class="home-title__tablet home-tablet-only">8 rooms.<br>Less, but<br>more.</span><span class="home-title__wide home-wide-only">8 rooms.<br>Less, but more.</span></h2>
         <figure class="home-stay__image home-stay__image--room">
-          <img src="assets/images/rooms/06_room_garden.png" alt="庭を望む客室" width="1448" height="1086">
+          <picture class="responsive-picture">
+            <source type="image/avif" srcset="assets/images/optimized/rooms/06_room_garden-480w.avif 480w, assets/images/optimized/rooms/06_room_garden-768w.avif 768w, assets/images/optimized/rooms/06_room_garden-1024w.avif 1024w, assets/images/optimized/rooms/06_room_garden-1448w.avif 1448w" sizes="(min-width: 768px) 60vw, calc(100vw - 40px)">
+            <source type="image/webp" srcset="assets/images/optimized/rooms/06_room_garden-480w.webp 480w, assets/images/optimized/rooms/06_room_garden-768w.webp 768w, assets/images/optimized/rooms/06_room_garden-1024w.webp 1024w, assets/images/optimized/rooms/06_room_garden-1448w.webp 1448w" sizes="(min-width: 768px) 60vw, calc(100vw - 40px)">
+            <img src="assets/images/rooms/06_room_garden.png" alt="庭を望む客室" width="1448" height="1086" loading="lazy" decoding="async">
+          </picture>
           <figcaption>GARDEN ROOM / 01</figcaption>
         </figure>
         <figure class="home-stay__image home-stay__image--bath">
-          <img src="assets/images/bath/10_bath_main.png" alt="庭に面した温泉浴場" width="1536" height="1024">
+          <picture class="responsive-picture">
+            <source type="image/avif" srcset="assets/images/optimized/bath/10_bath_main-480w.avif 480w, assets/images/optimized/bath/10_bath_main-768w.avif 768w, assets/images/optimized/bath/10_bath_main-1024w.avif 1024w, assets/images/optimized/bath/10_bath_main-1536w.avif 1536w" sizes="(min-width: 768px) 25vw, 240px">
+            <source type="image/webp" srcset="assets/images/optimized/bath/10_bath_main-480w.webp 480w, assets/images/optimized/bath/10_bath_main-768w.webp 768w, assets/images/optimized/bath/10_bath_main-1024w.webp 1024w, assets/images/optimized/bath/10_bath_main-1536w.webp 1536w" sizes="(min-width: 768px) 25vw, 240px">
+            <img src="assets/images/bath/10_bath_main.png" alt="庭に面した温泉浴場" width="1536" height="1024" loading="lazy" decoding="async">
+          </picture>
           <figcaption>ONSEN / 02</figcaption>
         </figure>
         <figure class="home-stay__image home-stay__image--dining">
-          <img src="assets/images/dining/12_dinner.png" alt="TSUGIの夕食" width="1536" height="1024">
+          <picture class="responsive-picture">
+            <source type="image/avif" srcset="assets/images/optimized/dining/12_dinner-480w.avif 480w, assets/images/optimized/dining/12_dinner-768w.avif 768w, assets/images/optimized/dining/12_dinner-1024w.avif 1024w, assets/images/optimized/dining/12_dinner-1536w.avif 1536w" sizes="(min-width: 768px) 35vw, 210px">
+            <source type="image/webp" srcset="assets/images/optimized/dining/12_dinner-480w.webp 480w, assets/images/optimized/dining/12_dinner-768w.webp 768w, assets/images/optimized/dining/12_dinner-1024w.webp 1024w, assets/images/optimized/dining/12_dinner-1536w.webp 1536w" sizes="(min-width: 768px) 35vw, 210px">
+            <img src="assets/images/dining/12_dinner.png" alt="TSUGIの夕食" width="1536" height="1024" loading="lazy" decoding="async">
+          </picture>
           <figcaption>DINNER / 03</figcaption>
         </figure>
         <p class="home-stay__meta">全8室 / 2–3名 / 温泉 / 朝夕食</p>
@@ -139,11 +155,19 @@
         <p class="section-label"><span class="home-label__sp">— — SPACE</span><span class="home-label__tablet home-tablet-only">SPACE / LOUNGE</span></p>
         <h2 class="home-lounge__title" id="home-lounge-title"><span class="home-title__sp">客室ではない<br>場所にも、<br>居場所を。</span><span class="home-title__tablet home-tablet-only">客室ではない場所にも、<br>居場所を。</span><span class="home-title__wide home-wide-only">客室ではない<br>場所にも、<br>居場所を。</span></h2>
         <figure class="home-lounge__image home-lounge__image--main">
-          <img src="assets/images/lounge/04_lounge_main.png" alt="川に面したTSUGIのラウンジ" width="1536" height="1024">
+          <picture class="responsive-picture">
+            <source type="image/avif" srcset="assets/images/optimized/lounge/04_lounge_main-480w.avif 480w, assets/images/optimized/lounge/04_lounge_main-768w.avif 768w, assets/images/optimized/lounge/04_lounge_main-1024w.avif 1024w, assets/images/optimized/lounge/04_lounge_main-1536w.avif 1536w" sizes="(min-width: 1024px) 64vw, (min-width: 768px) calc(100vw - 64px), 100vw">
+            <source type="image/webp" srcset="assets/images/optimized/lounge/04_lounge_main-480w.webp 480w, assets/images/optimized/lounge/04_lounge_main-768w.webp 768w, assets/images/optimized/lounge/04_lounge_main-1024w.webp 1024w, assets/images/optimized/lounge/04_lounge_main-1536w.webp 1536w" sizes="(min-width: 1024px) 64vw, (min-width: 768px) calc(100vw - 64px), 100vw">
+            <img src="assets/images/lounge/04_lounge_main.png" alt="川に面したTSUGIのラウンジ" width="1536" height="1024" loading="lazy" decoding="async">
+          </picture>
           <figcaption>SHARED LOUNGE / 04</figcaption>
         </figure>
         <figure class="home-lounge__image home-lounge__image--detail">
-          <img src="assets/images/lounge/05_lounge_detail.png" alt="ラウンジの木のテーブルと茶器" width="1122" height="1402">
+          <picture class="responsive-picture">
+            <source type="image/avif" srcset="assets/images/optimized/lounge/05_lounge_detail-480w.avif 480w, assets/images/optimized/lounge/05_lounge_detail-768w.avif 768w, assets/images/optimized/lounge/05_lounge_detail-1122w.avif 1122w" sizes="(min-width: 1024px) 21vw, (min-width: 768px) 250px, 220px">
+            <source type="image/webp" srcset="assets/images/optimized/lounge/05_lounge_detail-480w.webp 480w, assets/images/optimized/lounge/05_lounge_detail-768w.webp 768w, assets/images/optimized/lounge/05_lounge_detail-1122w.webp 1122w" sizes="(min-width: 1024px) 21vw, (min-width: 768px) 250px, 220px">
+            <img src="assets/images/lounge/05_lounge_detail.png" alt="ラウンジの木のテーブルと茶器" width="1122" height="1402" loading="lazy" decoding="async">
+          </picture>
           <figcaption>READ / TEA / WINDOW</figcaption>
         </figure>
         <p class="home-lounge__copy">部屋を減らして生まれた場所を、<br>何もしないための共有空間へ。</p>
@@ -155,11 +179,19 @@
         <h2 class="home-story__title" id="home-story-title"><span class="home-title__sp">古いままでも、<br>新しいだけでも<br>ない。</span><span class="home-title__tablet home-tablet-only">古いままでも、<br>新しいだけでもない。</span><span class="home-title__wide home-wide-only">古いままでも、<br>新しいだけでもない。</span></h2>
         <p class="home-story__graphic" aria-hidden="true"><span>KEEP</span><span>CHANGE</span><span>REMOVE</span></p>
         <figure class="home-story__image home-story__image--beam">
-          <img src="assets/images/story/14_pillar_beam.png" alt="受け継いだ柱と梁" width="1122" height="1402">
+          <picture class="responsive-picture">
+            <source type="image/avif" srcset="assets/images/optimized/story/14_pillar_beam-480w.avif 480w, assets/images/optimized/story/14_pillar_beam-768w.avif 768w, assets/images/optimized/story/14_pillar_beam-1122w.avif 1122w" sizes="(min-width: 1024px) 27vw, (min-width: 768px) 190px, 280px">
+            <source type="image/webp" srcset="assets/images/optimized/story/14_pillar_beam-480w.webp 480w, assets/images/optimized/story/14_pillar_beam-768w.webp 768w, assets/images/optimized/story/14_pillar_beam-1122w.webp 1122w" sizes="(min-width: 1024px) 27vw, (min-width: 768px) 190px, 280px">
+            <img src="assets/images/story/14_pillar_beam.png" alt="受け継いだ柱と梁" width="1122" height="1402" loading="lazy" decoding="async">
+          </picture>
           <figcaption>KEEP / PILLAR &amp; BEAM</figcaption>
         </figure>
         <figure class="home-story__image home-story__image--courtyard">
-          <img src="assets/images/story/15_wooden_frames_courtyard.png" alt="木枠越しに見える中庭" width="1122" height="1402">
+          <picture class="responsive-picture">
+            <source type="image/avif" srcset="assets/images/optimized/story/15_wooden_frames_courtyard-480w.avif 480w, assets/images/optimized/story/15_wooden_frames_courtyard-768w.avif 768w, assets/images/optimized/story/15_wooden_frames_courtyard-1122w.avif 1122w" sizes="(min-width: 1024px) 53vw, (min-width: 768px) 486px, 220px">
+            <source type="image/webp" srcset="assets/images/optimized/story/15_wooden_frames_courtyard-480w.webp 480w, assets/images/optimized/story/15_wooden_frames_courtyard-768w.webp 768w, assets/images/optimized/story/15_wooden_frames_courtyard-1122w.webp 1122w" sizes="(min-width: 1024px) 53vw, (min-width: 768px) 486px, 220px">
+            <img src="assets/images/story/15_wooden_frames_courtyard.png" alt="木枠越しに見える中庭" width="1122" height="1402" loading="lazy" decoding="async">
+          </picture>
         </figure>
         <a class="button button--secondary home-section-link home-story__link" href="story.html">VIEW STORY&nbsp; →</a>
       </section>
@@ -168,10 +200,18 @@
         <p class="section-label">03 — EXPERIENCE</p>
         <h2 class="home-experience__title" id="home-experience-title">一日を、<br>急がない。</h2>
         <figure class="home-experience__image home-experience__image--walk">
-          <img src="assets/images/experience/23_morning_walk.png" alt="川沿いの温泉街を歩く朝" width="1536" height="1024">
+          <picture class="responsive-picture">
+            <source type="image/avif" srcset="assets/images/optimized/experience/23_morning_walk-480w.avif 480w, assets/images/optimized/experience/23_morning_walk-768w.avif 768w, assets/images/optimized/experience/23_morning_walk-1024w.avif 1024w, assets/images/optimized/experience/23_morning_walk-1536w.avif 1536w" sizes="(min-width: 1024px) 59vw, (min-width: 768px) 49vw, 280px">
+            <source type="image/webp" srcset="assets/images/optimized/experience/23_morning_walk-480w.webp 480w, assets/images/optimized/experience/23_morning_walk-768w.webp 768w, assets/images/optimized/experience/23_morning_walk-1024w.webp 1024w, assets/images/optimized/experience/23_morning_walk-1536w.webp 1536w" sizes="(min-width: 1024px) 59vw, (min-width: 768px) 49vw, 280px">
+            <img src="assets/images/experience/23_morning_walk.png" alt="川沿いの温泉街を歩く朝" width="1536" height="1024" loading="lazy" decoding="async">
+          </picture>
         </figure>
         <figure class="home-experience__image home-experience__image--river">
-          <img src="assets/images/experience/17_river.png" alt="山あいの温泉街を流れる川" width="1536" height="1024">
+          <picture class="responsive-picture">
+            <source type="image/avif" srcset="assets/images/optimized/experience/17_river-480w.avif 480w, assets/images/optimized/experience/17_river-768w.avif 768w, assets/images/optimized/experience/17_river-1024w.avif 1024w" sizes="165px">
+            <source type="image/webp" srcset="assets/images/optimized/experience/17_river-480w.webp 480w, assets/images/optimized/experience/17_river-768w.webp 768w, assets/images/optimized/experience/17_river-1024w.webp 1024w" sizes="165px">
+            <img src="assets/images/experience/17_river.png" alt="山あいの温泉街を流れる川" width="1536" height="1024" loading="lazy" decoding="async">
+          </picture>
         </figure>
         <p class="home-experience__copy">歩く、浸かる、読む。<br>予定を増やさないための過ごし方。</p>
         <ol class="home-experience__timeline home-tablet-only" aria-label="TSUGIでの一日の過ごし方">
@@ -189,14 +229,22 @@
           <h2 class="home-location__title" id="home-location-title"><span class="home-title__sp">山と川のあいだに<br>ある、小さな温泉地。</span><span class="home-title__tablet home-tablet-only">山と川のあいだにある、<br>小さな温泉地。</span><span class="home-title__wide home-wide-only">山と川のあいだにある、<br>小さな温泉地。</span></h2>
         </div>
         <figure class="home-location__image">
-          <img src="assets/images/experience/18_onsen_town.png" alt="山と川に囲まれた温泉街" width="1536" height="1024">
+          <picture class="responsive-picture">
+            <source type="image/avif" srcset="assets/images/optimized/experience/18_onsen_town-480w.avif 480w, assets/images/optimized/experience/18_onsen_town-768w.avif 768w, assets/images/optimized/experience/18_onsen_town-1024w.avif 1024w, assets/images/optimized/experience/18_onsen_town-1536w.avif 1536w" sizes="(min-width: 1024px) 55vw, (min-width: 768px) calc(100vw - 64px), calc(100vw - 40px)">
+            <source type="image/webp" srcset="assets/images/optimized/experience/18_onsen_town-480w.webp 480w, assets/images/optimized/experience/18_onsen_town-768w.webp 768w, assets/images/optimized/experience/18_onsen_town-1024w.webp 1024w, assets/images/optimized/experience/18_onsen_town-1536w.webp 1536w" sizes="(min-width: 1024px) 55vw, (min-width: 768px) calc(100vw - 64px), calc(100vw - 40px)">
+            <img src="assets/images/experience/18_onsen_town.png" alt="山と川に囲まれた温泉街" width="1536" height="1024" loading="lazy" decoding="async">
+          </picture>
         </figure>
         <p class="home-location__meta"><span class="home-meta__sp">駅からバスで約40分 / 温泉街から徒歩8分</span><span class="home-meta__tablet home-tablet-only">駅からバスで約40分<br>温泉街から徒歩8分</span></p>
         <a class="button button--secondary home-section-link home-location__link" href="experience.html#access"><span class="home-link__sp">ACCESS&nbsp; →</span><span class="home-link__tablet home-tablet-only">VIEW ACCESS&nbsp; →</span></a>
       </section>
 
       <section class="home-final" aria-labelledby="home-final-title">
-        <img class="home-final__image" src="assets/images/exterior/24_night_exterior.png" alt="夜のTSUGI外観" width="1536" height="1024">
+        <picture class="responsive-picture">
+          <source type="image/avif" srcset="assets/images/optimized/exterior/24_night_exterior-480w.avif 480w, assets/images/optimized/exterior/24_night_exterior-768w.avif 768w, assets/images/optimized/exterior/24_night_exterior-1024w.avif 1024w, assets/images/optimized/exterior/24_night_exterior-1366w.avif 1366w, assets/images/optimized/exterior/24_night_exterior-1536w.avif 1536w" sizes="100vw">
+          <source type="image/webp" srcset="assets/images/optimized/exterior/24_night_exterior-480w.webp 480w, assets/images/optimized/exterior/24_night_exterior-768w.webp 768w, assets/images/optimized/exterior/24_night_exterior-1024w.webp 1024w, assets/images/optimized/exterior/24_night_exterior-1366w.webp 1366w, assets/images/optimized/exterior/24_night_exterior-1536w.webp 1536w" sizes="100vw">
+          <img class="home-final__image" src="assets/images/exterior/24_night_exterior.png" alt="夜のTSUGI外観" width="1536" height="1024" loading="lazy" decoding="async">
+        </picture>
         <div class="home-final__content">
           <p class="section-label">NEXT STAY</p>
           <h2 class="home-final__title" id="home-final-title"><span class="home-title__sp">次の一泊を、<br>ここで。</span><span class="home-title__tablet home-tablet-only">次の一泊を、ここで。</span></h2>
