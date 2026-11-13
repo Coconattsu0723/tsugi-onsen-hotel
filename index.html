@@ -96,7 +96,7 @@
           <source type="image/webp" srcset="assets/images/optimized/exterior/01_hero_exterior-480w.webp 480w, assets/images/optimized/exterior/01_hero_exterior-768w.webp 768w, assets/images/optimized/exterior/01_hero_exterior-1024w.webp 1024w, assets/images/optimized/exterior/01_hero_exterior-1600w.webp 1600w" sizes="100vw">
           <img class="home-hero__image" src="assets/images/exterior/01_hero_exterior.png" alt="川沿いに建つTSUGIの外観" width="1672" height="941" loading="eager" fetchpriority="high">
         </picture>
-        <h1 class="home-hero__title" id="home-hero-title">何もしない一泊。</h1>
+        <h1 class="home-hero__title" id="home-hero-title">何もしない一泊を、<br>TSUGIで。</h1>
         <p class="home-hero__metadata">TSUGI / ONSEN HOTEL / SINCE 1968</p>
       </section>
 
@@ -147,21 +147,31 @@
         </figure>
         <figure class="home-stay__image home-stay__image--dining">
           <picture class="responsive-picture">
-            <source type="image/avif" srcset="assets/images/optimized/dining/12_dinner-480w.avif 480w, assets/images/optimized/dining/12_dinner-768w.avif 768w, assets/images/optimized/dining/12_dinner-1024w.avif 1024w, assets/images/optimized/dining/12_dinner-1536w.avif 1536w" sizes="(min-width: 1024px) 495px, (min-width: 768px) 267px, 210px">
-            <source type="image/webp" srcset="assets/images/optimized/dining/12_dinner-480w.webp 480w, assets/images/optimized/dining/12_dinner-768w.webp 768w, assets/images/optimized/dining/12_dinner-1024w.webp 1024w, assets/images/optimized/dining/12_dinner-1536w.webp 1536w" sizes="(min-width: 1024px) 495px, (min-width: 768px) 267px, 210px">
+            <source type="image/avif" srcset="assets/images/optimized/dining/12_dinner-480w.avif 480w, assets/images/optimized/dining/12_dinner-768w.avif 768w, assets/images/optimized/dining/12_dinner-1024w.avif 1024w, assets/images/optimized/dining/12_dinner-1536w.avif 1536w" sizes="(min-width: 1366px) 495px, (min-width: 1024px) 400px, (min-width: 768px) 267px, 210px">
+            <source type="image/webp" srcset="assets/images/optimized/dining/12_dinner-480w.webp 480w, assets/images/optimized/dining/12_dinner-768w.webp 768w, assets/images/optimized/dining/12_dinner-1024w.webp 1024w, assets/images/optimized/dining/12_dinner-1536w.webp 1536w" sizes="(min-width: 1366px) 495px, (min-width: 1024px) 400px, (min-width: 768px) 267px, 210px">
             <img src="assets/images/dining/12_dinner.png" alt="TSUGIの夕食" width="1536" height="1024" loading="lazy" decoding="async">
           </picture>
           <figcaption>DINNER / 03</figcaption>
+        </figure>
+        <figure class="home-stay__image home-stay__image--detail">
+          <picture class="responsive-picture">
+            <source type="image/avif" srcset="assets/images/optimized/rooms/09_room_detail-480w.avif 480w, assets/images/optimized/rooms/09_room_detail-768w.avif 768w" sizes="(min-width: 1366px) 240px, 184px">
+            <source type="image/webp" srcset="assets/images/optimized/rooms/09_room_detail-480w.webp 480w, assets/images/optimized/rooms/09_room_detail-768w.webp 768w" sizes="(min-width: 1366px) 240px, 184px">
+            <img src="assets/images/rooms/09_room_detail.png" alt="古い木組みを残した客室の細部" width="1122" height="1402" loading="lazy" decoding="async">
+          </picture>
+          <figcaption>ROOM DETAIL / 04</figcaption>
         </figure>
         <p class="home-stay__meta">全8室 / 2–3名 / 温泉 / 朝夕食</p>
         <a class="button button--secondary home-section-link home-stay__link" href="stay.html">VIEW STAY&nbsp; →</a>
       </section>
 
       <section class="home-edit" aria-labelledby="home-edit-title">
-        <p class="home-edit__label">EDIT → SPACE → TIME</p>
-        <p class="home-edit__graphic" aria-hidden="true">12 → 08</p>
-        <h2 class="home-edit__title" id="home-edit-title">12室から、8室へ。</h2>
-        <p class="home-edit__copy">1968年に建てられた旅館を改修し、12室あった客室を8室に減らしました。一室あたりの空間を広げ、ラウンジなど、客室の外でもゆっくり過ごせる場所を設けました。</p>
+        <div class="home-edit__content">
+          <p class="home-edit__label">EDIT → SPACE → TIME</p>
+          <p class="home-edit__graphic" aria-hidden="true">12 → 08</p>
+          <h2 class="home-edit__title" id="home-edit-title">12室から、8室へ。</h2>
+          <p class="home-edit__copy">1968年に建てられた旅館を改修し、12室あった客室を8室に減らしました。一室あたりの空間を広げ、ラウンジなど、客室の外でもゆっくり過ごせる場所を設けました。</p>
+        </div>
       </section>
 
       <section class="home-lounge" aria-labelledby="home-lounge-title">
@@ -210,8 +220,24 @@
       </section>
 
       <section class="home-experience" aria-labelledby="home-experience-title">
-        <p class="section-label">03 — EXPERIENCE</p>
-        <h2 class="home-experience__title" id="home-experience-title">急がない一日。</h2>
+        <div class="home-experience__text">
+          <p class="section-label">03 — EXPERIENCE</p>
+          <h2 class="home-experience__title" id="home-experience-title">急がない一日。</h2>
+          <p class="home-experience__copy">歩く、浸かる、読む。<br>予定を増やさないための過ごし方。</p>
+          <div class="home-experience__schedule home-tablet-only">
+            <table aria-label="TSUGIでの一日の過ごし方">
+              <thead>
+                <tr><th scope="col">時刻</th><th scope="col">過ごし方</th></tr>
+              </thead>
+              <tbody>
+                <tr><td><time datetime="15:00">15:00</time></td><td>チェックイン</td></tr>
+                <tr><td><time datetime="17:30">17:30</time></td><td>温泉</td></tr>
+                <tr><td><time datetime="19:00">19:00</time></td><td>夕食</td></tr>
+                <tr><td><time datetime="07:00">07:00</time></td><td>翌朝の散歩</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
         <figure class="home-experience__image home-experience__image--walk">
           <picture class="responsive-picture">
             <source type="image/avif" srcset="assets/images/optimized/experience/23_morning_walk-480w.avif 480w, assets/images/optimized/experience/23_morning_walk-768w.avif 768w, assets/images/optimized/experience/23_morning_walk-1024w.avif 1024w, assets/images/optimized/experience/23_morning_walk-1536w.avif 1536w" sizes="(min-width: 1024px) 59vw, (min-width: 768px) 49vw, 280px">
@@ -226,20 +252,6 @@
             <img src="assets/images/experience/17_river.png" alt="山あいの温泉街を流れる川" width="1536" height="1024" loading="lazy" decoding="async">
           </picture>
         </figure>
-        <p class="home-experience__copy">歩く、浸かる、読む。<br>予定を増やさないための過ごし方。</p>
-        <div class="home-experience__schedule home-tablet-only">
-          <table aria-label="TSUGIでの一日の過ごし方">
-            <thead>
-              <tr><th scope="col">時刻</th><th scope="col">過ごし方</th></tr>
-            </thead>
-            <tbody>
-              <tr><td><time datetime="15:00">15:00</time></td><td>チェックイン</td></tr>
-              <tr><td><time datetime="17:30">17:30</time></td><td>温泉</td></tr>
-              <tr><td><time datetime="19:00">19:00</time></td><td>夕食</td></tr>
-              <tr><td><time datetime="07:00">07:00</time></td><td>翌朝の散歩</td></tr>
-            </tbody>
-          </table>
-        </div>
         <a class="button button--secondary home-section-link home-experience__link" href="experience.html">VIEW EXPERIENCE&nbsp; →</a>
       </section>
 
