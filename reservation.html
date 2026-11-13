@@ -70,7 +70,7 @@
       <section class="reservation-page container" aria-labelledby="reservation-title">
         <p class="section-label" lang="en">RESERVATION</p>
         <h1 id="reservation-title">ご予約</h1>
-        <p>このページは架空の温泉宿TSUGIの予約デモです。実際の空室確認や予約はできません。</p>
+        <p>このページは架空の温泉宿TSUGIの予約デモです。実際の空室確認や予約はできません。お試しにはサンプルの情報をご入力ください。</p>
         <form class="reservation-form" id="reservation-form">
           <div class="reservation-form__fields">
             <label>チェックイン<input type="date" name="arrival" required></label>
@@ -78,6 +78,14 @@
             <label>人数<select name="guests" required><option value="2">2名</option><option value="3">3名</option></select></label>
             <label>客室タイプ<select name="room" required><option value="">選択してください</option><option value="garden">GARDEN｜庭を望む客室</option><option value="river">RIVER｜川を望む客室</option><option value="corner">CORNER｜角部屋</option></select></label>
           </div>
+          <fieldset class="reservation-form__contact">
+            <legend>予約者情報（すべて必須）</legend>
+            <div class="reservation-form__fields">
+              <label>お名前<input type="text" id="reservation-name" autocomplete="name" required></label>
+              <label>電話番号<input type="tel" id="reservation-phone" autocomplete="tel" required></label>
+              <label>メールアドレス<input type="email" id="reservation-email" autocomplete="email" required></label>
+            </div>
+          </fieldset>
           <button type="submit" class="button button--primary" disabled>入力内容を確認</button>
           <p role="status" id="reservation-summary"></p>
         </form>

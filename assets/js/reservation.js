@@ -1,5 +1,8 @@
 const form = document.querySelector('#reservation-form');
 const { arrival, departure, guests, room } = form.elements;
+const customerName = document.querySelector('#reservation-name');
+const phone = document.querySelector('#reservation-phone');
+const email = document.querySelector('#reservation-email');
 const summary = document.querySelector('#reservation-summary');
 
 function updateOptions() {
@@ -18,7 +21,7 @@ arrival.min = today.toISOString().slice(0, 10);
 form.addEventListener('change', updateOptions);
 form.addEventListener('submit', (event) => {
   event.preventDefault();
-  summary.textContent = `${arrival.value}から${departure.value}まで、${guests.value}名、${room.selectedOptions[0].textContent}。入力内容を確認しました。`;
+  summary.textContent = `${arrival.value}から${departure.value}まで、${guests.value}名、${room.selectedOptions[0].textContent}。お名前：${customerName.value}／電話番号：${phone.value}／メールアドレス：${email.value}。`;
 });
 updateOptions();
 
