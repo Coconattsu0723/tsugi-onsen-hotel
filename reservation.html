@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ご予約 | TSUGI</title>
+    <meta name="description" content="TSUGIの宿泊予約デモ。宿泊日と客室タイプを選べます。">
+    <link rel="icon" href="assets/favicons/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="assets/favicons/favicon-48x48.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png">
+    <script>document.documentElement.classList.add("js");</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&amp;family=Noto+Serif+JP:wght@400;500;600&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/foundation.css">
+    <link rel="stylesheet" href="assets/css/layout.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/css/pages.css">
+    <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/reservation.js" defer></script>
+  </head>
+  <body class="site-shell page-reservation">
+    <a class="skip-link" href="#main-content">本文へ移動</a>
+    <header class="site-header">
+      <div class="site-header__inner container">
+        <a class="site-header__logo" href="index.html" aria-label="TSUGI ホーム"><img src="assets/logos/tsugi_circle_logo.png" alt="" width="1254" height="1254"></a>
+        <div class="site-header__actions">
+          <nav class="site-header__nav" aria-label="グローバルナビゲーション">
+            <ul class="site-header__nav-list">
+              <li><a class="site-header__nav-link" href="index.html">HOME</a></li>
+              <li><a class="site-header__nav-link" href="stay.html">STAY</a></li>
+              <li><a class="site-header__nav-link" href="story.html">STORY</a></li>
+              <li><a class="site-header__nav-link" href="experience.html">EXPERIENCE</a></li>
+            </ul>
+          </nav>
+          <a class="button button--primary site-header__reservation" href="reservation.html" aria-current="page"><span>RESERVATION</span><span class="site-header__reservation-arrow" aria-hidden="true">→</span></a>
+          <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="メニューを開く" data-menu-button><span class="menu-toggle__icon" aria-hidden="true"><span></span><span></span></span></button>
+        </div>
+      </div>
+    </header>
+
+    <div class="menu-overlay" id="site-menu" aria-hidden="true" data-site-menu hidden>
+      <div class="menu-overlay__inner container">
+        <div class="menu-overlay__top">
+          <a class="menu-overlay__logo" href="index.html" aria-label="TSUGI ホーム"><img src="assets/logos/tsugi_circle_logo_white.png" alt="" width="1254" height="1254"></a>
+          <button class="menu-overlay__close" type="button" aria-label="メニューを閉じる" data-menu-close></button>
+        </div>
+        <nav class="menu-overlay__navigation" aria-label="メニュー">
+          <ul class="menu-overlay__main-list">
+            <li><a class="menu-overlay__main-link" href="index.html">HOME</a></li>
+            <li><a class="menu-overlay__main-link" href="stay.html">STAY</a></li>
+            <li><a class="menu-overlay__main-link" href="story.html">STORY</a></li>
+            <li><a class="menu-overlay__main-link" href="experience.html">EXPERIENCE</a></li>
+            <li><a class="menu-overlay__main-link" href="reservation.html" aria-current="page">RESERVATION</a></li>
+          </ul>
+        </nav>
+        <div class="menu-overlay__footer">
+          <ul class="menu-overlay__utility" aria-label="補助メニュー">
+            <li><a href="experience.html#access">ACCESS</a></li>
+            <li><a href="stay.html#faq">FAQ</a></li>
+            <li><span>INSTAGRAM</span></li>
+          </ul>
+          <div class="menu-overlay__brand-note"><strong>TSUGI</strong><span>A small onsen inn in between mountain and river.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <main class="site-main" id="main-content" tabindex="-1">
+      <section class="reservation-page container" aria-labelledby="reservation-title">
+        <p class="section-label" lang="en">RESERVATION</p>
+        <h1 id="reservation-title">ご予約</h1>
+        <p>このページは架空の温泉宿TSUGIの予約デモです。実際の空室確認や予約はできません。</p>
+        <form class="reservation-form" id="reservation-form">
+          <div class="reservation-form__fields">
+            <label>チェックイン<input type="date" name="arrival" required></label>
+            <label>チェックアウト<input type="date" name="departure" required></label>
+            <label>人数<select name="guests" required><option value="2">2名</option><option value="3">3名</option></select></label>
+            <label>客室タイプ<select name="room" required><option value="">選択してください</option><option value="garden">GARDEN｜庭を望む客室</option><option value="river">RIVER｜川を望む客室</option><option value="corner">CORNER｜角部屋</option></select></label>
+          </div>
+          <button type="submit" class="button button--primary" disabled>入力内容を確認</button>
+          <p role="status" id="reservation-summary"></p>
+        </form>
+        <p>チェックイン 15:00〜18:00 ／ チェックアウト 11:00</p>
+        <a href="stay.html#stay-information">宿泊案内を見る →</a>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="site-footer">
+      <div class="container">
+        <div class="site-footer__grid">
+          <div class="site-footer__brand">
+            <a class="site-footer__logo" href="index.html" aria-label="TSUGI ホーム"><img src="assets/logos/tsugi_wordmark_white.png" alt="" width="1448" height="1086"></a>
+            <p class="site-footer__description"><span class="site-footer__description-brand">TSUGI<br></span>A small onsen inn between mountain and river.<br>8 rooms / Since 1968, edited for 2026.</p>
+          </div>
+          <nav class="site-footer__main" aria-label="フッターナビゲーション"><ul class="site-footer__main-list">
+            <li><a href="stay.html">STAY</a></li><li><a href="story.html">STORY</a></li><li><a href="experience.html">EXPERIENCE</a></li><li><a href="reservation.html" aria-current="page">RESERVATION</a></li>
+          </ul></nav>
+          <nav class="site-footer__utility" aria-label="補助ナビゲーション"><ul class="site-footer__utility-list">
+            <li><a href="experience.html#access">ACCESS</a></li><li><a href="stay.html#faq">FAQ</a></li><li><span class="site-footer__utility-text">INSTAGRAM</span></li>
+          </ul></nav>
+        </div>
+        <div class="site-footer__bottom"><small>© 2026 TSUGI</small><span class="site-footer__location">MOUNTAIN / RIVER / ONSEN</span></div>
+      </div>
+    </footer>
+  </body>
+</html>
