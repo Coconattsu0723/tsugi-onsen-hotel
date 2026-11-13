@@ -1734,7 +1734,6 @@
     top: 320px;
     left: 20px;
     width: 300px;
-    font-family: var(--font-mincho);
     font-size: 16px;
     font-weight: 500;
     line-height: 1.75;
@@ -1867,7 +1866,6 @@
     top: 330px;
     left: 20px;
     width: calc(100% - 60px);
-    font-family: var(--font-mincho);
     font-size: 16px;
     font-weight: 500;
     line-height: 1.75;
@@ -2237,7 +2235,6 @@
       top: 846px;
       left: 32px;
       width: 600px;
-      font-family: var(--font-mincho);
       font-size: 17px;
       line-height: 1.85;
     }
@@ -2264,7 +2261,6 @@
       top: 286px;
       left: 32px;
       width: 620px;
-      font-family: var(--font-mincho);
       font-size: 18px;
       line-height: 1.9;
     }
@@ -2463,7 +2459,6 @@
       top: 472px;
       left: 32px;
       width: 620px;
-      font-family: var(--font-mincho);
       font-size: 17px;
       line-height: 1.85;
     }
@@ -2575,7 +2570,6 @@
       top: 158px;
       left: 465.561px;
       width: 225.3659px;
-      font-family: var(--font-mincho);
       font-size: 18px;
       line-height: 1.9;
     }
@@ -3259,7 +3253,6 @@
     .page-story .story-keep .story-choice__copy {
       width: 273.4146px;
       margin-top: 380px;
-      font-family: var(--font-mincho);
       font-size: 17px;
       line-height: 1.8;
     }
@@ -3330,7 +3323,6 @@
     .page-story .story-change .story-choice__copy {
       width: 302.1951px;
       margin-top: 370px;
-      font-family: var(--font-mincho);
       font-size: 17px;
       line-height: 1.8;
     }
@@ -5321,9 +5313,9 @@
   .page-stay .stay-hero__figure {
     position: absolute;
     top: 464px;
-    right: 20px;
+    right: 0;
+    bottom: 0;
     left: 20px;
-    height: 330px;
     overflow: hidden;
   }
 
@@ -5904,12 +5896,7 @@
       top: 441px;
       right: 0;
       left: 0;
-      height: 545px;
-      overflow: visible;
-    }
-
-    .page-stay .stay-hero__figure img {
-      height: 513px;
+      overflow: hidden;
     }
 
     .page-stay .stay-hero__figure figcaption,
@@ -5925,8 +5912,11 @@
 
     .page-stay .stay-hero__figure figcaption {
       position: absolute;
-      top: 529px;
+      bottom: 14px;
       left: 14px;
+      padding: 6px 8px;
+      color: #fff;
+      background: var(--color-navy);
     }
 
     .page-stay .stay-rooms {
@@ -6443,19 +6433,8 @@
     }
 
     .page-stay .stay-hero__figure {
-      top: 100px;
-      right: 40px;
+      top: 0;
       left: 368.0976px;
-      height: 608px;
-    }
-
-    .page-stay .stay-hero__figure img {
-      height: 570px;
-    }
-
-    .page-stay .stay-hero__figure figcaption {
-      top: 592px;
-      left: 0;
     }
 
     .page-stay .stay-rooms {
@@ -6795,7 +6774,6 @@
     }
 
     .page-stay .stay-hero__figure {
-      right: 56px;
       left: 491.8415px;
     }
 
@@ -7080,7 +7058,6 @@
     }
 
     .page-stay .stay-hero__figure {
-      right: 64px;
       left: 520px;
     }
 
