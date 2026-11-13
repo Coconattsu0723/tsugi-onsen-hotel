@@ -7378,14 +7378,14 @@
     background: var(--color-surface);
   }
 
-  .reservation-form__contact {
+  .reservation-form__group {
     min-width: 0;
     margin: 0;
     padding: 0;
     border: 0;
   }
 
-  .reservation-form__contact legend {
+  .reservation-form__group legend {
     margin-bottom: 12px;
     font-weight: 700;
   }
@@ -7394,6 +7394,10 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
     gap: 20px;
+  }
+
+  .reservation-form__contact .reservation-form__fields {
+    grid-template-columns: minmax(0, 1fr);
   }
 
   .reservation-form label {

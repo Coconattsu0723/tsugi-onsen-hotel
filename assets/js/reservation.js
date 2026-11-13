@@ -21,7 +21,7 @@ arrival.min = today.toISOString().slice(0, 10);
 form.addEventListener('change', updateOptions);
 form.addEventListener('submit', (event) => {
   event.preventDefault();
-  summary.textContent = `${arrival.value}から${departure.value}まで、${guests.value}名、${room.selectedOptions[0].textContent}。お名前：${customerName.value}／電話番号：${phone.value}／メールアドレス：${email.value}。`;
+  summary.textContent = `${arrival.value}から${departure.value}まで、${guests.value}名、${room.selectedOptions[0].textContent}。お名前：${customerName.value}／メールアドレス：${email.value}／電話番号：${phone.value}。`;
 });
 updateOptions();
 
