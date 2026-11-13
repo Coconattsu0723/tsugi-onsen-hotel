@@ -523,6 +523,10 @@
     line-height: 1.18;
   }
 
+  .reservation-banner__copy {
+    margin-bottom: 20px;
+  }
+
   .reservation-banner__button {
     min-height: 48px;
     border-width: 1px;
@@ -4206,6 +4210,13 @@
     scroll-margin-top: var(--header-height);
   }
 
+  .page-experience .experience-day__title {
+    margin-top: 16px;
+    font-size: clamp(32px, 4vw, 48px);
+    font-weight: 700;
+    line-height: 1.2;
+  }
+
   .page-experience .timeline {
     display: grid;
     margin-top: 74px;
@@ -4235,7 +4246,7 @@
   .page-experience .timeline-card {
     height: 490px;
     border: 1px solid var(--color-line);
-    background: var(--color-surface);
+    background: #fff;
     overflow: hidden;
   }
 
@@ -4637,6 +4648,7 @@
 
     .page-experience .timeline__item:nth-child(even) .timeline-scene-note {
       left: -5.7561px;
+      text-align: right;
     }
 
     .page-experience .timeline__item:nth-child(even) .timeline-scene-note::before {
